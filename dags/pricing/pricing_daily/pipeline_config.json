@@ -1,0 +1,9 @@
+{
+  "data_pricing": {
+    "directory": "scripts",
+    "script_name": [
+      "high_pricing_partners_mediamarkt",
+      "product_rankings_by_store_snapshot"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+checks for customer_historical:
+  - freshness(date) < 1d
+  - row_count_dropped_compared_to_yesterday > 0:
+      row_count_dropped_compared_to_yesterday query: |
+        SELECT
+        (
+        SELECT count(1)
+        FROM master.customer_historical
+        WHERE "date" = current_date ) -
+        (
+        SELECT count(1)
+        FROM master.customer_historical
+        WHERE "date" = current_date-1 )

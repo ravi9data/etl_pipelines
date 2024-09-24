@@ -1,0 +1,17 @@
+{
+  "data_pricing": {
+    "directory": "scripts",
+    "script_name": [
+      "store_mapper_live_state",
+      "all_pricing_grover",
+      "all_pricing_partners",
+      "availability_live_state",
+      "high_pricing_grover",
+      "high_pricing_partners",
+      "prod_pricing_historical",
+      "product_family_check",
+      "hightouch_sources.new_way_of_buying",
+      "pricing.metrics_by_product_sku"
+    ]
+  }
+}

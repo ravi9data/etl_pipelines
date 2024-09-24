@@ -1,0 +1,18 @@
+{
+   "1_ods_ops": {
+     "directory": "1_ods_ops",
+     "script_name": [
+       "00_ingram_micro_orders",
+       "01_ingram_allocation_mapping"
+     ]
+   },
+  "4_dwh_ops": {
+     "directory": "4_dwh_ops",
+     "script_name": [
+       "reverse_lead_times",
+       "reverse_return_condition",
+       "ingram_inventory", 
+       "ingram_inventory_buckets"
+     ]
+   }
+}

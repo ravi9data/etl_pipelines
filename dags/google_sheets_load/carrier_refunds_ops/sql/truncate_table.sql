@@ -1,0 +1,1 @@
+TRUNCATE staging_google_sheet.carrier_refunds_ops;

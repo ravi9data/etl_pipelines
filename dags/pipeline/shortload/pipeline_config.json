@@ -1,0 +1,451 @@
+{
+  "da2_0_ods": {
+    "directory": "0_ods_core",
+    "scripts_list": [
+      {
+        "script_name": "00_companies"
+      },
+      {
+        "script_name": "00_inventory_reservations"
+      },
+      {
+        "script_name": "00_inventory_store_variant_availability"
+      },
+      {
+        "script_name": "00_store"
+      },
+      {
+        "script_name": "00_supplier"
+      },
+      {
+        "script_name": "00_variant"
+      },
+      {
+        "script_name": "01_catalog_rental_plans_price_change"
+      },
+      {
+        "script_name": "01_rental_plans"
+      },
+      {
+        "script_name": "01_shipment_inbound"
+      },
+      {
+        "script_name": "01_shipment_outbound"
+      },
+      {
+        "script_name": "01_variantid_sku_historical_mapping"
+      }
+    ]
+  },
+  "da2_1_ods_core": {
+    "directory": "1_ods_core",
+    "scripts_list": [
+      {
+        "script_name": "00_allocation"
+      },
+      {
+        "script_name": "00_asset_payments_new_infra"
+      },
+      {
+        "script_name": "00_customer"
+      },
+      {
+        "script_name": "00_order_billing_payments_final"
+      },
+      {
+        "script_name": "00_order_item"
+      },
+      {
+        "script_name": "00_asset_subscription_mapping"
+      },
+      {
+        "script_name": "00_subscription"
+      },
+      {
+        "script_name": "01_asset"
+      },
+      {
+        "script_name": "01_order"
+      },
+      {
+        "script_name": "02_inventory_reservations_pending"
+      }
+    ]
+  },
+  "da2_1_ods_finance": {
+    "directory": "1_ods_finance",
+    "scripts_list": [
+      {
+        "script_name": "00_internal_billing_payment"
+      },
+      {
+        "script_name": "00_ledger_curated"
+      },
+      {
+        "script_name": "00_ledger_failed_payment_reason"
+      },
+      {
+        "script_name": "00_subscription_discount_new_infra"
+      },
+      {
+        "script_name": "00_payment_addon"
+      },
+      {
+        "script_name": "00_payment_asset"
+      },
+      {
+        "script_name": "00_payment_refund"
+      },
+      {
+        "script_name": "00_payment_subscription"
+      },
+      {
+        "script_name": "01_payment_all"
+      },
+      {
+        "script_name": "02_failed_first_payments"
+      }
+    ]
+  },
+  "da2_1_ods_marketing": {
+    "directory": "1_ods_marketing",
+    "scripts_list": [
+      {
+        "script_name": "00_customer_marketing_details"
+      },
+      {
+        "script_name": "00_customer_order_details"
+      },
+      {
+        "script_name": "00_order_conversion_labels"
+      },
+      {
+        "script_name": "00_order_marketing_channel"
+      },
+      {
+        "script_name": "00_order_retention_group"
+      },
+      {
+        "script_name": "01_customer_voucher_usage"
+      }
+    ]
+  },
+  "da2_1_ods_ops": {
+    "directory": "1_ods_ops",
+    "scripts_list": [
+      {
+        "script_name": "00_asset_allocation_history"
+      },
+      {
+        "script_name": "00_bank_account_snapshot_results"
+      },
+      {
+        "script_name": "00_customer_allocation_history"
+      },
+      {
+        "script_name": "00_insurance_allocation"
+      },
+      {
+        "script_name": "00_order_journey"
+      },
+      {
+        "script_name": "00_payment_info"
+      },
+      {
+        "script_name": "00_purchase_request"
+      },
+      {
+        "script_name": "00_purchase_request_item"
+      },
+      {
+        "script_name": "00_subscription_plan_switching"
+      },
+      {
+        "script_name": "00_wms_ingram_events"
+      },
+      {
+        "script_name": "00_wms_sftp_merged_ingram_events"
+      },
+      {
+        "script_name": "00_system_changes"
+      },
+      {
+        "script_name": "00_us_inventory"
+      },
+      {
+        "script_name": "00_returned_damaged_assets"
+      },
+      {
+        "script_name": "90_sf_ops_asset_delivery"
+      },
+      {
+        "script_name": "91_shipcloud_incoming"
+      },
+      {
+        "script_name": "92_tracking_shipment_update"
+      },
+      {
+        "script_name": "93_tracking_events"
+      },
+      {
+        "script_name": "94_delivery_attempts"
+      },
+      {
+        "script_name": "94_failed_deliveries"
+      },
+      {
+        "script_name": "95_allocation_shipment"
+      },
+      {
+        "script_name": "96_failed_delivery_candidates_with_ready_to_ship_state"
+      }
+    ]
+  },
+  "da2_1_ods_risk": {
+    "directory": "1_ods_risk",
+    "scripts_list": [
+      {
+        "script_name": "00_adyen_payment_requests"
+      },
+      {
+        "script_name": "00_seon_fraud_scores"
+      },
+      {
+        "script_name": "00_external_provider_order_score_pii"
+      },
+      {
+        "script_name": "00_ixopay_transactions"
+      },
+      {
+        "script_name": "00_ods_data_sensitive_customer_pii"
+      },
+      {
+        "script_name": "00_order_subscription_user_payment_methods"
+      },
+      {
+        "script_name": "00_schufa"
+      },
+      {
+        "script_name": "01_customer_scoring"
+      },
+      {
+        "script_name": "01_customer_unique_phone_info"
+      },
+      {
+        "script_name": "01_order_payment_method"
+      },
+      {
+        "script_name": "01_order_scoring"
+      },
+      {
+        "script_name": "order_manual_review_previous_order_history"
+      }
+    ]
+  },
+  "da2_1_ods_grover_card": {
+    "directory": "1_ods_grover_card",
+    "scripts_list": [
+      {
+        "script_name": "01_grover_card_cash"
+      }
+    ]
+  },
+  "da2_2_ods_catman": {
+    "directory": "2_ods_catman",
+    "scripts_list": [
+      {
+        "script_name": "00_pricing_live_feed"
+      },
+      {
+        "script_name": "00_procurement_live_feed"
+      },
+      {
+        "script_name": "00_product_live_feed"
+      },
+      {
+        "script_name": "00_waiting_list"
+      },
+      {
+        "script_name": "01_grover_market_value"
+      },
+      {
+        "script_name": "mietkauf_prices"
+      }
+    ]
+  },
+  "da2_2_ods_finance": {
+    "directory": "2_ods_finance",
+    "scripts_list": [
+      {
+        "script_name": "00_addon"
+      },
+      {
+        "script_name": "00_allocation_days_in_stock"
+      },
+      {
+        "script_name": "00_asset_subscription_reconciliation"
+      },
+      {
+        "script_name": "00_subscription_assets"
+      },
+      {
+        "script_name": "00_subscription_payment_details"
+      },
+      {
+        "script_name": "00_grover_care_subscription"
+      },
+      {
+        "script_name": "01_asset_cashflow"
+      },
+      {
+        "script_name": "01_subscription_cashflow"
+      },
+      {
+        "script_name": "02_asset_last_allocation_details"
+      },
+      {
+        "script_name": "02_subscription_active_label"
+      },
+      {
+        "script_name": "02_subscription_cancellation_reason"
+      },
+      {
+        "script_name": "02_subscription_default"
+      },
+      {
+        "script_name": "03_customer_acquisition_cohort"
+      },
+      {
+        "script_name": "03_customer_subscription_details"
+      },
+      {
+        "script_name": "03_debt_collection"
+      },
+      {
+        "script_name": "03_subscription_payment_label"
+      },
+      {
+        "script_name": "03_subscription_phase_mapping"
+      },
+      {
+        "script_name": "04_active_subscriptions_overview"
+      }
+    ]
+  },
+  "da2_2_ods_marketing": {
+    "directory": "2_ods_marketing",
+    "scripts_list": [
+      {
+        "script_name": "00_customer_rfm_segmentation"
+      },
+      {
+        "script_name": "00_subscription_retention"
+      }
+    ]
+  },
+  "da2_2_ods_risk": {
+    "directory": "2_ods_risk",
+    "scripts_list": [
+      {
+        "script_name": "00_order_decline_reason"
+      },
+      {
+        "script_name": "00_order_manual_review_rules"
+      },
+      {
+        "script_name": "00_payment_order_pii"
+      },
+      {
+        "script_name": "01_order_manual_review"
+      }
+    ]
+  },
+  "da2_2_ods_b2b": {
+    "directory": "2_ods_b2b",
+    "scripts_list": [
+      {
+        "script_name": "offers"
+      },
+      {
+        "script_name": "kits"
+      }
+    ]
+  },
+  "da2_3_master": {
+    "directory": "3_master",
+    "scripts_list": [
+      {
+        "script_name": "allocation"
+      },
+      {
+        "script_name": "asset"
+      },
+      {
+        "script_name": "asset_payment"
+      },
+      {
+        "script_name": "customer"
+      },
+      {
+        "script_name": "order"
+      },
+      {
+        "script_name": "refund_payment"
+      },
+      {
+        "script_name": "subscription"
+      },
+      {
+        "script_name": "subscription_payment"
+      },
+      {
+        "script_name": "variant"
+      }
+    ]
+  },
+  "da2_4_dwh_product": {
+    "directory": "4_dwh_product",
+    "scripts_list": [
+      {
+        "script_name": "hourly_conversion_report"
+      },
+      {
+        "script_name": "conversion_add_on_report"
+      },
+      {
+        "script_name": "conversion_bundle_report"
+      },
+      {
+        "script_name": "dm_commercial.cancellation_prediction_results"
+      }
+    ]
+  },
+  "4_dwh_catman": {
+    "directory": "4_dwh_catman",
+    "scripts_list": [
+      {
+        "script_name": "widget_0_feed"
+      },
+      {
+        "script_name": "widget_1_new_arrivals"
+      },
+      {
+        "script_name": "widget_2_our_best_deals"
+      },
+      {
+        "script_name": "widget_3_most_popular"
+      }
+    ]
+  },
+  "11_marketing_reporting": {
+    "directory": "11_marketing_reporting",
+    "scripts_list": [
+      {
+        "script_name": "dm_marketing.affiliates_metrics_paid_orders"
+      },
+      {
+        "script_name": "dm_marketing.affiliates_metrics_acquisition"
+      }
+    ]
+  }
+}

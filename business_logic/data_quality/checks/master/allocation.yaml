@@ -1,0 +1,2 @@
+checks for allocation:
+  - freshness(allocated_at) < 1d

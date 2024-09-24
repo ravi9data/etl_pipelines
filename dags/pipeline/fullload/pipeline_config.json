@@ -1,0 +1,422 @@
+{
+  "da2_0_ods": {
+    "directory": "0_ods_core",
+    "script_name": [
+      "00_companies",
+      "00_inventory_reservations",
+      "00_inventory_store_variant_availability",
+      "00_store",
+      "00_supplier",
+      "00_variant",
+      "01_catalog_rental_plans_price_change",
+      "01_rental_plans",
+      "01_shipment_inbound",
+      "01_shipment_outbound",
+      "01_variantid_sku_historical_mapping"
+    ]
+  },
+  "da2_1_ods_core": {
+    "directory": "1_ods_core",
+    "script_name": [
+      "00_allocation",
+      "00_asset_payments_new_infra",
+      "00_customer",
+      "00_order_billing_payments_final",
+      "00_order_item",
+      "00_asset_subscription_mapping",
+      "00_subscription",
+      "01_asset",
+      "01_order",
+      "02_inventory_reservations_pending"
+    ]
+  },
+  "da2_1_ods_finance": {
+    "directory": "1_ods_finance",
+    "script_name": [
+      "00_internal_billing_payment",
+      "00_billing_invoices_clerk",
+      "00_ledger_curated",
+      "00_ledger_failed_payment_reason",
+      "00_subscription_discount_new_infra",
+      "00_payment_addon",
+      "00_payment_addon_35up",
+      "00_payment_addon_grover_care",
+      "00_payment_asset",
+      "00_payment_refund",
+      "00_payment_subscription",
+      "01_payment_all",
+      "02_failed_first_payments"
+    ]
+  },
+  "da2_1_ods_marketing": {
+    "directory": "1_ods_marketing",
+    "script_name": [
+      "00_customer_marketing_details",
+      "00_customer_order_details",
+      "00_order_conversion_labels",
+      "00_order_retention_group",
+      "01_customer_voucher_usage"
+    ]
+  },
+  "da2_1_ods_ops": {
+    "directory": "1_ods_ops",
+    "script_name": [
+      "00_asset_allocation_history",
+      "00_bank_account_snapshot_results",
+      "00_customer_allocation_history",
+      "00_insurance_allocation",
+      "00_order_journey",
+      "00_payment_info",
+      "00_purchase_request",
+      "00_purchase_request_item",
+      "00_returned_damaged_assets",
+      "00_subscription_plan_switching",
+      "00_system_changes",
+      "00_us_inventory",
+      "00_wms_ingram_events",
+      "00_wms_sftp_merged_ingram_events",
+      "02_allocation_return_condition",
+      "90_sf_ops_asset_delivery",
+      "91_shipcloud_incoming",
+      "92_tracking_shipment_update",
+      "93_tracking_events",
+      "94_delivery_attempts",
+      "94_failed_deliveries",
+      "95_allocation_shipment"
+    ]
+  },
+  "da2_1_ods_risk": {
+    "directory": "1_ods_risk",
+    "script_name": [
+      "00_adyen_payment_requests",
+      "00_external_provider_order_score_pii",
+      "00_ixopay_transactions",
+      "00_ods_data_sensitive_customer_pii",
+      "00_order_subscription_user_payment_methods",
+      "00_schufa",
+      "01_customer_scoring",
+      "01_customer_unique_phone_info",
+      "01_order_payment_method",
+      "01_order_scoring",
+      "order_manual_review_previous_order_history"
+    ]
+  },
+  "da2_1_ods_grover_card": {
+    "directory": "1_ods_grover_card",
+    "script_name": [
+      "01_grover_card_cash"
+        ]
+  },
+  "da2_2_ods_catman": {
+    "directory": "2_ods_catman",
+    "script_name": [
+      "00_pricing_live_feed",
+      "00_procurement_live_feed",
+      "00_product_live_feed",
+      "00_waiting_list",
+      "01_grover_market_value",
+      "mietkauf_prices"
+    ]
+  },
+  "da2_2_ods_finance": {
+    "directory": "2_ods_finance",
+    "script_name": [
+      "00_addon",
+      "00_allocation_days_in_stock",
+      "00_asset_subscription_reconciliation",
+      "00_subscription_assets",
+      "00_subscription_payment_details",
+      "00_grover_care_subscription",
+      "01_asset_cashflow",
+      "01_subscription_cashflow",
+      "02_asset_last_allocation_details",
+      "02_subscription_active_label",
+      "02_subscription_cancellation_reason",
+      "02_subscription_default",
+      "03_customer_acquisition_cohort",
+      "03_customer_subscription_details",
+      "03_debt_collection",
+      "03_subscription_payment_label",
+      "03_subscription_phase_mapping",
+      "04_active_subscriptions_overview",
+      "00_addon_35up",
+      "00_addon_35up_order"
+    ]
+  },
+  "da2_2_ods_marketing": {
+    "directory": "2_ods_marketing",
+    "script_name": [
+      "00_customer_rfm_segmentation",
+      "00_subscription_retention"
+    ]
+  },
+  "da2_2_ods_risk": {
+    "directory": "2_ods_risk",
+    "script_name": [
+      "00_order_decline_reason",
+      "00_order_manual_review_rules",
+      "00_payment_order_pii",
+      "01_order_manual_review"
+    ]
+  },
+  "da2_2_ods_b2b": {
+    "directory": "2_ods_b2b",
+    "script_name": [
+      "offers",
+      "kits"
+    ]
+  },
+  "da2_1_ods_marketing_1": {
+    "directory": "1_ods_marketing",
+    "script_name": [
+      "00_order_marketing_channel"
+    ]
+  },
+  "da2_3_master": {
+    "directory": "3_master",
+    "script_name": [
+      "allocation",
+      "asset",
+      "asset_payment",
+      "customer",
+      "order",
+      "refund_payment",
+      "subscription",
+      "subscription_payment",
+      "variant",
+      "addon",
+      "addon_35up_order",
+      "grover_care_subscription",
+      "payment_addon",
+      "payment_addon_35up",
+      "payment_addon_grover_care"
+    ]
+  },
+  "da2_5_master_historical": {
+    "directory": "5_master_historical",
+    "script_name": [
+      "asset_historical",
+      "allocation_historical",
+      "subscription_historical",
+      "order_historical",
+      "subscription_payment_historical",
+      "refund_payment_historical",
+      "purchase_item_request_historical",
+      "asset_payment_historical",
+      "customer_historical",
+      "variant_historical",
+      "addon_historical",
+      "addon_35up_order_historical",
+      "grover_care_subscription_historical",
+      "payment_addon_historical",
+      "payment_addon_35up_historical",
+      "payment_addon_grover_care_historical"
+    ]
+  },
+  "da2_4_dwh_catman": {
+    "directory": "4_dwh_catman",
+    "script_name": [
+      "1_daily_fact_asset",
+      "1_portfolio_overview",
+      "1_utilization",
+      "product_conversion",
+      "product_reporting",
+      "product_subscription_value",
+      "purchase_discount_report",
+      "subscription_plan_conversion",
+      "variant_monitoring",
+      "weekly_reporting_brand",
+      "weekly_reporting_supplier",
+      "search_usage",
+      "commercial_campaigns_tracking",
+      "dm_commercial.merchandising_kpi_report",
+      "search_exit_rate",
+      "daily_weekly_traffic_product_info",
+      "navigation_bar_performance",
+      "portfolio_overview_sf_and_im"
+    ]
+  },
+  "da2_4_dwh_finance": {
+    "directory": "4_dwh_finance",
+    "script_name": [
+      "00_payment_all_historical",
+      "asset_collection_curves",
+      "01_asset_collection_curves_historical",
+      "01_customer_collection_curves_historical",
+      "asset_capitalsource_change",
+      "asset_data_sap_migration",
+      "asset_impairment_dashboard",
+      "asset_subscription_eom_mapping",
+      "collection_performance",
+      "customer_collection_curves",
+      "dm_finance.budget_metrics",
+      "impactkpi",
+      "reporting_churn_first_allocation_store",
+      "reporting_profitability_variables",
+      "risk_first_allocation_store",
+      "spv_report_historical",
+      "tgt_dev_clv",
+      "subcription_dpd_correction",
+      "new_way_of_buying"
+    ]
+  },
+  "da2_4_dwh_ops": {
+    "directory": "4_dwh_ops",
+    "script_name": [
+      "00_assets_booked",
+      "00_delivery_times",
+      "00_jira_ops",
+      "00_lost_assets_and_compensation",
+      "00_shipments",
+      "00_recirculation_rate",
+      "01_failed_deliveries",
+      "01_lost_assets_per_shipments",
+      "asset_purchase_option",
+      "dimensions",
+      "hats_after_return_receive",
+      "ht_table_exports",
+      "replacements",
+      "revocations",
+      "return_funnel",
+      "shipment_reporting",
+      "shipment_reporting_daily",
+      "shipment_reporting_monthly",
+      "subscription_vertragsstrafe_calc",
+      "wh_transfer_stock",
+      "serial_number_changes",
+      "asset_issue_claims",
+      "00_mismatch_fixes",
+      "ingram_inventory",
+      "sku_abc_classification",
+      "shipping_cost_matrix",
+      "monthly_failed_delivery_candidates_with_ready_to_ship_state",
+      "escooters_licence_plate_renewal",
+      "lost_report_historical_losses",
+      "lost_report_current_losses"
+    ]
+  },
+  "da2_4_dwh_marketing": {
+    "directory": "4_dwh_marketing",
+    "script_name": [
+      "01_store_reporting",
+      "acquisition_monthly_report",
+      "acquisition_weekly_report",
+      "active_customer",
+      "crm_country_weekly_report",
+      "crm_monthly_report",
+      "crm_weekly_report",
+      "customer_churn_segmentation",
+      "grover_button_impressions",
+      "monthly_website_performance",
+      "ods_production_channel_date_cost",
+      "reporting_active_paying_subscriptions",
+      "web_vitals"
+    ]
+  },
+  "da2_4_dwh_product": {
+    "directory": "4_dwh_product",
+    "script_name": [
+      "channel_subscription_switching",
+      "conversion",
+      "customer_pmf_survey",
+      "hourly_conversion_report",
+      "dm_commercial.commercial_cash_monthly_kpis_reporting",
+      "dwh.weekly_monthly_subscription_churn",
+      "dm_product.store_stocks_historical",
+      "dm_product.churn_dashboard"
+    ]
+  },
+  "da2_4_dwh_core": {
+    "directory": "4_dwh_core",
+    "script_name": [
+      "daily_kpi_rented_not_rented_again_subscriptions",
+      "daily_kpi_report_main_tables",
+      "date_store_product_plan_kpis",
+      "monthly_reporting_historical",
+      "reporting_churn",
+      "reporting_churn_country",
+      "reporting_churn_store",
+      "reporting_churn_store_commercial",
+      "weekly_reporting_historical",
+      "weekly_reporting_portfolio_overview",
+      "subscription_switching_weekly"
+    ]
+  },
+  "da2_4_dwh_bd": {
+    "directory": "4_dwh_bd",
+    "script_name": [
+      "b2b_list_and_orders",
+      "international_reporting",
+      "partner_reporting",
+      "affiliate_product_sku_agg",
+      "partnerships_reporting",
+      "skyvia_partners_offline",
+      "store_visits_daily",
+      "store_visits_overview"
+    ]
+  },
+  "da2_4_dwh_accounting": {
+    "directory": "4_dwh_accounting",
+    "script_name": [
+      "media_markt_prices",
+      "price_check"
+    ]
+  },
+  "da2_4_dwh_risk": {
+    "directory": "4_dwh_risk",
+    "script_name": [
+      "credit_bureau_spain",
+      "credit_bureau_spain_shipaddress",
+      "failed_payment_reasons_us",
+      "manual_review_historical",
+      "onfido_trigger_performance",
+      "subscription_payment_recoveries",
+      "asset_returns_dashboard",
+      "marketing_risk_dashbaord",
+      "spain_customer_limit",
+      "pbi_customer_tracking",
+      "dwh.weekly_monthly_risk_payments"
+    ]
+  },
+  "4_dwh_b2b": {
+    "directory": "4_dwh_b2b",
+    "script_name": [
+      "b2b_sf_sync",
+      "shipment_overview",
+      "gbp_overview",
+      "gbp_created_orders"
+    ]
+  },
+  "da2_4_dwh_dc": {
+    "directory": "4_dwh_dc",
+    "script_name": [
+      "recovery_over_dpd_report"
+    ]
+  },
+  "da2_4_dwh_grover_card": {
+    "directory": "4_dwh_grover_card",
+    "script_name": [
+      "active_subscription_overview_card"
+    ]
+  },
+  "da2_4_dwh_embedded_finance": {
+    "directory": "4_dwh_embedded_finance",
+    "script_name": [
+      "grover_care_pdp",
+      "addon_35up_tracking"
+    ]
+  },
+  "11_marketing_reporting": {
+    "directory": "11_marketing_reporting",
+    "script_name": [
+      "dm_marketing.conversion_funnel_daily_report",
+      "dm_marketing.customer_rfm_segmentation_historical"
+    ]
+  },
+  "6_procurement_reporting": {
+    "directory": "6_procurement_reporting",
+    "script_name": [
+      "weekly_supplier_reporting_automated"
+    ]
+  }
+}

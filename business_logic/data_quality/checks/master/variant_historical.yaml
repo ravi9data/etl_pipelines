@@ -1,0 +1,2 @@
+checks for variant_historical:
+  - freshness(date) < 1d

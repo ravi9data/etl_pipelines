@@ -1,0 +1,5 @@
+checks for subscription:
+  - freshness(created_date) < 1d
+  - freshness(updated_date) < 1d
+  - freshness(start_date) < 1d
+  - freshness(cancellation_date) < 1d

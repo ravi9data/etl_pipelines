@@ -1,0 +1,15 @@
+{
+  "spv_daily": {
+    "directory": "9_SPV",
+    "script_name": [
+      "1_union_all_sources",
+      "2_removing_outliers",
+      "3_0_avg_3_lowest",
+      "3_1_product_month_condition_price",
+      "4_price_per_sku_per_condition",
+      "5_asset_market_value",
+      "6_0_spv_report",
+      "6_1_sold_asset_valuation"
+    ]
+  }
+}

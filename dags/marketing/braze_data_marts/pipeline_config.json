@@ -1,0 +1,14 @@
+{
+  "braze_dm": {
+    "directory": "11_marketing_reporting/Braze Datamart",
+    "script_name": [
+      "01_braze_campaign_mapping",
+      "02_braze_campaign_events_email",
+      "02_braze_campaign_events_in_app_message",
+      "02_braze_campaign_events_push_notification",
+      "03_braze_order_attribution",
+      "04_braze_campaign_events_all",
+      "04_braze_canvas_events_all"
+    ]
+  }
+}
