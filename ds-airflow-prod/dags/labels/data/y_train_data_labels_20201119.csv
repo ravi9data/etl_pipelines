@@ -1,0 +1,3359 @@
+customer_id,label
+69981,good
+83170,good
+175489,good
+177953,good
+477094,fraud
+255280,fraud
+424211,good
+568900,uncertain
+352252,good
+103795,good
+35760,good
+355759,good
+208430,fraud
+81217,uncertain
+112288,uncertain
+395110,good
+476509,fraud
+207709,good
+261616,good
+340736,good
+334338,good
+412888,credit default
+40324,good
+516095,uncertain
+495833,good
+424608,uncertain
+150658,fraud
+35885,uncertain
+120926,good
+210123,good
+90530,uncertain
+51590,uncertain
+60959,uncertain
+91849,good
+256399,good
+481012,good
+246590,good
+233455,credit default
+523471,uncertain
+576881,uncertain
+207835,credit default
+27230,uncertain
+25050,recovered bad
+321190,fraud
+128008,recovered bad
+19784,recovered bad
+359015,good
+159095,recovered bad
+429025,uncertain
+29234,good
+71930,good
+290223,uncertain
+26239,uncertain
+549614,good
+477709,fraud
+316901,good
+259755,good
+97349,fraud
+292362,uncertain
+295771,uncertain
+84068,good
+456552,uncertain
+60926,recovered bad
+256877,good
+533352,fraud
+55793,credit default
+530015,uncertain
+462754,uncertain
+150605,good
+69774,credit default
+435382,good
+473481,uncertain
+14945,good
+258998,uncertain
+469524,uncertain
+60519,fraud
+463232,uncertain
+127549,fraud
+126911,good
+344077,good
+260900,uncertain
+296789,good
+533241,uncertain
+48828,fraud
+120156,good
+375332,recovered good
+115863,good
+551835,uncertain
+226302,uncertain
+298451,uncertain
+136877,good
+161578,fraud
+223386,fraud
+421793,good
+173945,uncertain
+517751,uncertain
+31241,credit default
+507939,good
+59697,uncertain
+3294,good
+74389,credit default
+420913,uncertain
+165273,good
+495737,credit default
+278458,good
+226108,good
+492412,fraud
+345992,uncertain
+566224,uncertain
+407266,uncertain
+317939,good
+435298,uncertain
+23896,good
+55152,recovered good
+142993,good
+547585,uncertain
+161294,good
+169461,good
+106309,fraud
+56882,fraud
+479101,good
+247795,good
+369009,uncertain
+190333,credit default
+491930,fraud
+196285,recovered good
+62661,recovered good
+305171,good
+264729,good
+91566,credit default
+433672,credit default
+554114,uncertain
+541981,uncertain
+265477,uncertain
+120696,fraud
+297026,good
+164284,uncertain
+22745,uncertain
+226882,fraud
+179777,credit default
+448613,uncertain
+33823,good
+345790,uncertain
+181318,good
+286753,good
+10158,good
+81427,recovered good
+39649,credit default
+49642,fraud
+20762,recovered good
+208439,uncertain
+375000,uncertain
+162665,good
+374489,fraud
+202277,uncertain
+189446,recovered bad
+177913,uncertain
+76379,uncertain
+402411,good
+551536,uncertain
+71076,good
+399847,good
+379576,recovered good
+181503,credit default
+9497,recovered bad
+213703,good
+539833,uncertain
+150268,recovered good
+29658,recovered bad
+117653,good
+229524,fraud
+398222,good
+435499,uncertain
+136686,credit default
+60492,good
+365432,good
+31649,uncertain
+280712,good
+78279,uncertain
+439261,fraud
+176534,good
+414402,good
+291813,good
+519623,uncertain
+527846,uncertain
+124841,credit default
+178766,good
+242033,good
+305665,uncertain
+350412,good
+491993,uncertain
+176531,good
+21309,credit default
+46696,recovered good
+323604,good
+189514,credit default
+544653,good
+89078,credit default
+393750,good
+357619,good
+422268,good
+217044,good
+402309,uncertain
+232712,good
+383699,good
+392014,good
+57687,recovered bad
+97450,uncertain
+200950,uncertain
+376795,good
+9382,credit default
+219341,good
+506072,uncertain
+3561,good
+412572,recovered bad
+61627,recovered bad
+411583,good
+96097,fraud
+155494,good
+188989,good
+61115,uncertain
+84134,fraud
+518635,uncertain
+455614,fraud
+65618,credit default
+22058,recovered bad
+6897,recovered good
+60209,recovered bad
+102000,uncertain
+305076,credit default
+501997,uncertain
+234747,uncertain
+59147,uncertain
+472893,credit default
+477596,uncertain
+124171,recovered bad
+3790,recovered bad
+85743,good
+44366,good
+367545,uncertain
+156751,credit default
+533548,good
+404848,good
+269428,good
+72652,fraud
+248265,uncertain
+380031,credit default
+507374,uncertain
+197491,good
+567331,uncertain
+147370,good
+59509,fraud
+322024,good
+443179,good
+251420,uncertain
+91284,good
+268028,uncertain
+225638,good
+106377,recovered bad
+27453,recovered bad
+408809,credit default
+185165,good
+224471,recovered bad
+162708,good
+173715,uncertain
+195464,good
+119022,uncertain
+112238,credit default
+415011,uncertain
+462919,good
+454089,uncertain
+205928,good
+66339,fraud
+319780,credit default
+78794,fraud
+495263,uncertain
+149476,good
+3779,good
+231158,uncertain
+193993,uncertain
+489314,good
+43772,recovered good
+186066,good
+283480,credit default
+230382,good
+270288,credit default
+542791,uncertain
+190852,credit default
+323683,good
+224953,uncertain
+338429,fraud
+560005,fraud
+429599,recovered bad
+153387,uncertain
+83168,credit default
+494839,good
+52173,good
+297928,fraud
+134367,recovered bad
+45829,good
+524597,uncertain
+530517,uncertain
+258534,uncertain
+269738,uncertain
+103916,credit default
+214326,good
+385498,uncertain
+198347,uncertain
+351966,good
+140831,uncertain
+134589,credit default
+395330,good
+182367,uncertain
+84401,good
+159371,good
+275102,good
+31811,recovered good
+431554,uncertain
+137777,uncertain
+267441,uncertain
+107290,fraud
+440296,credit default
+337641,uncertain
+316304,good
+385348,good
+103622,good
+229039,good
+83697,recovered good
+426597,recovered good
+333800,good
+398527,good
+36659,good
+292400,uncertain
+207684,uncertain
+473441,uncertain
+423179,good
+59894,credit default
+133912,good
+351159,uncertain
+487524,good
+220226,good
+341994,uncertain
+13675,recovered bad
+203349,good
+16779,good
+539084,uncertain
+192156,uncertain
+107228,fraud
+110700,credit default
+421254,fraud
+109758,good
+490291,uncertain
+217686,good
+508141,uncertain
+46328,uncertain
+189754,good
+555204,uncertain
+291325,recovered bad
+231196,recovered good
+400062,good
+285360,credit default
+131258,good
+369254,uncertain
+19615,uncertain
+39395,uncertain
+265330,fraud
+557126,uncertain
+14699,credit default
+161040,good
+76534,good
+260550,good
+26047,good
+43285,fraud
+362560,uncertain
+33869,credit default
+187279,credit default
+362959,good
+385493,uncertain
+496660,uncertain
+498570,uncertain
+522217,good
+263482,recovered bad
+278843,good
+339963,uncertain
+347264,uncertain
+445347,good
+261612,uncertain
+282177,uncertain
+356869,good
+226467,good
+200567,good
+120367,good
+516386,uncertain
+184196,good
+2014,uncertain
+236884,uncertain
+92531,good
+174256,uncertain
+176261,good
+592276,fraud
+129414,recovered good
+304660,good
+464540,uncertain
+1164,recovered good
+471459,uncertain
+182061,good
+434462,recovered good
+573536,uncertain
+268761,good
+41225,uncertain
+165264,uncertain
+401233,good
+302437,recovered bad
+8279,uncertain
+34335,recovered bad
+235153,good
+198426,good
+283919,recovered good
+50865,uncertain
+213724,good
+544388,uncertain
+5473,credit default
+16301,credit default
+145280,recovered good
+224370,good
+213353,good
+208331,uncertain
+321619,good
+58606,recovered good
+146827,good
+207908,good
+421164,good
+319023,uncertain
+242511,good
+420214,good
+303789,good
+382113,uncertain
+517242,uncertain
+289863,uncertain
+489482,fraud
+140293,good
+368263,good
+40951,uncertain
+498809,good
+347829,uncertain
+367705,uncertain
+59199,good
+90864,uncertain
+480908,good
+308731,fraud
+323886,uncertain
+381064,uncertain
+150718,credit default
+190618,good
+467818,uncertain
+225179,uncertain
+8857,recovered bad
+485662,uncertain
+512820,uncertain
+282550,uncertain
+22092,good
+304449,uncertain
+461342,uncertain
+435652,uncertain
+517589,good
+78804,fraud
+365119,credit default
+204989,recovered bad
+370174,recovered good
+216117,good
+65611,good
+57478,credit default
+163844,good
+576017,uncertain
+107553,uncertain
+470955,good
+155215,recovered good
+130001,credit default
+28751,recovered good
+249677,good
+43139,credit default
+563653,uncertain
+13305,uncertain
+146055,fraud
+305976,uncertain
+534751,uncertain
+454421,good
+558869,uncertain
+385534,uncertain
+78252,good
+154673,good
+491968,uncertain
+151264,good
+254498,good
+58034,credit default
+374912,uncertain
+64466,good
+120668,credit default
+439040,uncertain
+266461,uncertain
+322115,credit default
+80534,uncertain
+370479,good
+221909,good
+218694,good
+303433,good
+445868,good
+105780,good
+149047,good
+388579,uncertain
+240894,fraud
+44648,recovered bad
+314433,good
+252480,recovered bad
+167147,good
+356407,uncertain
+172536,uncertain
+10312,good
+371295,fraud
+432761,uncertain
+2288,credit default
+574648,uncertain
+315354,good
+25008,good
+270322,good
+175547,fraud
+182779,good
+119776,good
+320379,fraud
+4937,good
+482119,uncertain
+411858,fraud
+479261,uncertain
+214387,uncertain
+580903,uncertain
+442933,fraud
+33770,good
+539806,uncertain
+148531,uncertain
+150846,recovered bad
+295448,uncertain
+528687,good
+173936,uncertain
+504084,credit default
+197687,good
+163176,recovered bad
+486406,good
+501695,good
+40908,credit default
+362194,uncertain
+132627,uncertain
+260203,good
+329269,uncertain
+329379,uncertain
+109506,credit default
+439406,fraud
+232285,good
+115585,credit default
+154366,good
+129706,fraud
+297215,uncertain
+479457,uncertain
+286206,good
+226355,good
+525558,uncertain
+400962,good
+51925,good
+188685,fraud
+167398,credit default
+432955,uncertain
+296128,uncertain
+381228,uncertain
+119907,fraud
+178814,good
+86082,good
+92701,fraud
+203711,uncertain
+472879,uncertain
+213450,good
+238126,uncertain
+275830,credit default
+276204,good
+40710,recovered good
+277523,good
+211150,good
+231318,uncertain
+215031,uncertain
+50652,good
+524526,fraud
+298946,good
+386288,good
+313174,good
+101225,fraud
+156673,uncertain
+477606,uncertain
+226985,recovered good
+238510,good
+569988,uncertain
+369543,good
+374153,recovered good
+254303,uncertain
+125763,good
+523167,uncertain
+190252,credit default
+493354,recovered good
+25237,good
+355664,good
+343594,uncertain
+145039,recovered bad
+50172,fraud
+140808,good
+28415,good
+435161,uncertain
+268088,uncertain
+484851,good
+72470,good
+5479,good
+318412,uncertain
+253779,fraud
+291022,good
+311011,credit default
+249547,good
+562938,uncertain
+23146,credit default
+267874,good
+35990,good
+16505,uncertain
+199824,uncertain
+36069,uncertain
+236123,good
+411180,good
+254786,good
+134378,credit default
+376475,good
+153676,good
+297349,good
+61314,recovered bad
+172845,credit default
+40366,credit default
+422395,good
+214455,credit default
+298322,good
+57574,credit default
+520768,uncertain
+239943,uncertain
+83754,fraud
+566835,uncertain
+297904,uncertain
+200854,credit default
+29270,fraud
+340019,good
+238995,fraud
+285817,good
+12468,recovered bad
+351485,uncertain
+67927,credit default
+414216,uncertain
+387566,uncertain
+92317,good
+257968,good
+98083,uncertain
+59430,fraud
+110566,uncertain
+494840,uncertain
+371718,uncertain
+584141,uncertain
+448276,uncertain
+88077,recovered good
+302080,good
+77267,uncertain
+352365,uncertain
+424668,uncertain
+319469,fraud
+270580,fraud
+218259,recovered good
+71943,good
+145724,recovered bad
+214451,good
+190625,credit default
+331172,good
+444398,uncertain
+24106,recovered bad
+315166,uncertain
+26972,good
+251517,good
+258499,uncertain
+377576,uncertain
+125241,good
+268288,uncertain
+45746,recovered bad
+109698,uncertain
+283596,uncertain
+504968,uncertain
+159002,good
+270062,fraud
+143438,uncertain
+432161,uncertain
+371459,good
+345090,good
+213612,good
+190724,recovered bad
+158180,good
+285798,uncertain
+477726,good
+281133,recovered bad
+380407,uncertain
+152117,good
+449495,good
+220937,uncertain
+291477,uncertain
+36908,fraud
+78679,credit default
+9333,credit default
+100558,good
+65249,recovered bad
+327090,good
+351941,recovered bad
+339027,uncertain
+386613,fraud
+343349,good
+294254,uncertain
+392630,uncertain
+429531,uncertain
+343099,good
+174036,recovered bad
+147259,good
+527015,good
+209192,recovered bad
+95858,good
+138579,credit default
+545482,fraud
+200787,credit default
+423010,uncertain
+89072,fraud
+498228,fraud
+255604,uncertain
+427823,good
+179711,fraud
+58049,good
+525336,good
+70110,good
+368085,good
+74368,fraud
+517085,uncertain
+58971,credit default
+341949,good
+220135,good
+53807,uncertain
+352031,good
+308240,good
+260196,good
+241953,good
+188190,fraud
+64976,uncertain
+567734,uncertain
+274260,good
+112045,uncertain
+155132,fraud
+153800,good
+181792,credit default
+146928,recovered good
+495902,good
+342743,uncertain
+465276,good
+60534,uncertain
+249387,uncertain
+13635,recovered good
+221722,good
+341813,uncertain
+400487,uncertain
+21585,uncertain
+516976,uncertain
+197590,credit default
+536874,uncertain
+177814,good
+89136,credit default
+4445,recovered bad
+134305,credit default
+290311,uncertain
+439678,uncertain
+306389,good
+77468,credit default
+80198,uncertain
+296501,good
+134258,good
+323468,uncertain
+396655,good
+363934,good
+255003,good
+213494,good
+267313,good
+289734,uncertain
+243821,good
+368897,recovered good
+183971,good
+127686,good
+146490,good
+253410,uncertain
+460445,uncertain
+121794,good
+201087,good
+505182,good
+121509,good
+56952,good
+229649,fraud
+319246,uncertain
+103482,credit default
+323518,good
+144489,good
+366291,uncertain
+150919,recovered good
+511041,uncertain
+325578,good
+103838,good
+459725,uncertain
+406611,uncertain
+477651,uncertain
+248915,recovered bad
+302266,good
+225467,uncertain
+54064,uncertain
+289290,good
+57606,fraud
+263027,recovered good
+477780,good
+484635,uncertain
+367454,uncertain
+283230,good
+74525,good
+28518,good
+421314,good
+365763,credit default
+445011,good
+209325,good
+127337,uncertain
+323218,recovered bad
+349858,uncertain
+304659,good
+138812,uncertain
+557534,uncertain
+244272,uncertain
+295295,uncertain
+120509,good
+342519,uncertain
+126016,credit default
+432263,good
+358050,uncertain
+50298,credit default
+68642,fraud
+195356,good
+262358,credit default
+557519,uncertain
+187901,uncertain
+40686,credit default
+200178,good
+420801,uncertain
+153445,credit default
+475085,uncertain
+60584,good
+97979,credit default
+430874,good
+302968,uncertain
+120875,credit default
+325097,good
+366507,good
+95708,credit default
+101804,good
+163810,good
+236781,credit default
+10927,good
+424953,good
+225358,good
+378394,uncertain
+527290,uncertain
+305109,uncertain
+96504,credit default
+175873,uncertain
+236546,good
+309097,good
+313582,uncertain
+62469,good
+492663,uncertain
+170204,recovered good
+145538,good
+404826,good
+457389,good
+490252,uncertain
+369075,good
+15061,good
+502357,uncertain
+171447,good
+389747,good
+386350,good
+171305,recovered good
+296421,recovered good
+165676,fraud
+78975,uncertain
+536206,uncertain
+276875,good
+448713,good
+398382,credit default
+342749,good
+227506,uncertain
+505494,good
+122799,credit default
+8768,good
+250080,uncertain
+184890,uncertain
+369259,uncertain
+124212,credit default
+428441,uncertain
+341276,good
+21196,uncertain
+307049,good
+211460,good
+274030,recovered bad
+521554,good
+106589,good
+441007,uncertain
+524234,good
+300505,good
+213883,fraud
+197187,good
+79831,fraud
+98346,uncertain
+144506,uncertain
+174265,recovered bad
+3765,good
+214593,recovered good
+527260,uncertain
+500158,uncertain
+431899,uncertain
+532268,uncertain
+385331,good
+360857,uncertain
+479045,good
+495752,uncertain
+484402,uncertain
+345939,credit default
+353003,good
+38993,uncertain
+13232,recovered bad
+360866,good
+35738,recovered bad
+27985,uncertain
+29868,good
+218371,good
+465318,recovered good
+367718,good
+73235,uncertain
+129451,good
+375074,uncertain
+38215,credit default
+154738,good
+198199,good
+222783,recovered good
+81469,uncertain
+350691,good
+441112,uncertain
+177838,recovered bad
+34939,uncertain
+299512,good
+16985,uncertain
+221432,credit default
+71966,uncertain
+529251,uncertain
+449509,good
+288294,good
+240592,good
+235317,uncertain
+407632,uncertain
+52400,credit default
+179165,good
+57722,good
+286227,good
+241724,good
+71569,good
+31952,good
+39172,uncertain
+321471,good
+296611,good
+100612,good
+329725,good
+276022,uncertain
+28105,uncertain
+261982,credit default
+311859,recovered bad
+46057,uncertain
+171836,uncertain
+284565,uncertain
+461857,good
+516746,good
+190354,credit default
+262324,good
+203784,good
+46501,good
+382114,recovered good
+148778,uncertain
+223536,recovered bad
+363771,uncertain
+490844,good
+472128,fraud
+183286,recovered bad
+568761,uncertain
+299327,good
+200206,good
+517110,good
+468819,uncertain
+15328,recovered bad
+101849,fraud
+112307,fraud
+421230,credit default
+158633,good
+392393,uncertain
+291307,recovered bad
+427174,uncertain
+144396,credit default
+436845,uncertain
+63871,good
+299565,good
+161700,recovered bad
+29413,recovered good
+20431,uncertain
+592220,fraud
+33816,recovered good
+293183,good
+178770,recovered bad
+308889,uncertain
+462719,good
+463744,uncertain
+244393,credit default
+424474,fraud
+496908,uncertain
+148628,good
+460041,good
+317068,good
+170916,fraud
+178071,good
+384493,uncertain
+79858,recovered bad
+99940,good
+19930,uncertain
+183264,good
+118336,uncertain
+149746,good
+388986,uncertain
+412282,uncertain
+10079,uncertain
+164015,fraud
+339202,uncertain
+200815,fraud
+404304,uncertain
+301405,good
+226437,uncertain
+137223,good
+100917,credit default
+306100,good
+87344,recovered good
+532981,uncertain
+255425,uncertain
+60548,good
+403389,good
+319451,good
+209864,uncertain
+332997,good
+360430,good
+165225,credit default
+268682,uncertain
+440286,uncertain
+17973,recovered bad
+298643,good
+184746,uncertain
+146601,good
+575297,uncertain
+518555,uncertain
+269979,credit default
+79651,good
+108261,credit default
+505481,credit default
+99923,credit default
+112027,credit default
+40062,good
+325172,good
+419163,good
+182867,uncertain
+462836,good
+98699,uncertain
+494337,uncertain
+372744,credit default
+366498,fraud
+184208,good
+369517,fraud
+311101,good
+283482,good
+104370,uncertain
+530520,uncertain
+86775,good
+312723,uncertain
+539483,fraud
+404213,credit default
+415257,uncertain
+533207,fraud
+156714,uncertain
+279554,good
+378909,uncertain
+455745,uncertain
+367824,uncertain
+339187,uncertain
+330546,uncertain
+364850,uncertain
+6619,uncertain
+32796,recovered bad
+139263,good
+184777,good
+406594,good
+37724,recovered bad
+47633,credit default
+120913,good
+455237,credit default
+361470,uncertain
+403549,good
+542905,fraud
+393654,good
+440345,good
+514825,uncertain
+350426,uncertain
+473049,good
+284186,good
+249170,good
+117830,fraud
+25057,uncertain
+565620,uncertain
+522927,good
+512684,good
+65781,recovered bad
+46637,uncertain
+285945,good
+386588,uncertain
+394483,good
+160552,credit default
+130853,credit default
+502352,uncertain
+216820,good
+311744,uncertain
+288565,good
+409574,uncertain
+353873,uncertain
+357920,uncertain
+416601,uncertain
+61507,uncertain
+291295,recovered bad
+438181,uncertain
+329635,good
+199930,good
+79103,uncertain
+116883,good
+55412,uncertain
+127380,recovered good
+179980,credit default
+580320,uncertain
+413020,uncertain
+377653,good
+347389,uncertain
+184815,good
+431634,good
+255088,uncertain
+160930,good
+202885,good
+76887,good
+405881,uncertain
+525809,good
+187458,uncertain
+51893,uncertain
+216338,good
+166272,credit default
+286441,uncertain
+468841,uncertain
+396002,good
+309297,good
+461388,good
+22750,uncertain
+516070,uncertain
+396773,uncertain
+87850,fraud
+479319,good
+115749,fraud
+203056,good
+55496,uncertain
+378301,good
+232149,good
+274405,recovered bad
+14853,recovered bad
+462450,good
+221962,uncertain
+9421,good
+133937,good
+257952,uncertain
+47126,credit default
+208882,good
+406373,good
+144303,good
+437268,fraud
+518275,uncertain
+246442,recovered good
+228832,good
+291409,recovered good
+57024,uncertain
+522730,uncertain
+438201,uncertain
+345932,credit default
+288706,uncertain
+252845,uncertain
+308108,uncertain
+141503,recovered good
+306637,good
+210449,recovered good
+118721,recovered bad
+44207,fraud
+122037,good
+117763,recovered bad
+259477,uncertain
+364735,uncertain
+5208,recovered bad
+395580,uncertain
+66934,uncertain
+449513,good
+147801,good
+258423,good
+474062,uncertain
+516886,good
+215565,fraud
+154671,good
+307461,good
+152776,recovered good
+128001,uncertain
+339867,good
+294559,uncertain
+60810,fraud
+533982,uncertain
+277087,good
+490507,good
+176036,credit default
+379,recovered good
+391835,good
+71010,fraud
+404992,good
+141323,good
+302994,good
+471426,uncertain
+315756,uncertain
+166469,recovered bad
+375303,good
+124616,credit default
+469578,uncertain
+142485,recovered good
+277984,good
+530027,uncertain
+236699,uncertain
+282669,good
+529650,uncertain
+36642,uncertain
+116832,good
+311416,good
+492316,good
+100955,uncertain
+185890,credit default
+134387,good
+77449,good
+423421,uncertain
+24046,recovered bad
+367993,good
+389262,uncertain
+272723,uncertain
+363792,uncertain
+53250,credit default
+21163,recovered bad
+29189,uncertain
+239107,credit default
+39889,uncertain
+200060,good
+436588,good
+206576,fraud
+72130,credit default
+321391,good
+90821,good
+19648,credit default
+244464,recovered bad
+56476,recovered good
+268464,uncertain
+302197,uncertain
+244729,good
+182439,credit default
+331286,recovered bad
+94680,credit default
+238059,uncertain
+1351,credit default
+55066,good
+43582,recovered bad
+246367,uncertain
+129400,fraud
+366625,good
+190394,uncertain
+296797,recovered bad
+455977,uncertain
+198871,good
+176908,good
+159896,good
+54012,fraud
+43666,recovered bad
+203891,good
+356672,uncertain
+412881,good
+439380,good
+138605,uncertain
+248879,good
+395733,good
+310221,good
+491157,uncertain
+48993,good
+247449,uncertain
+130916,recovered bad
+272672,good
+251216,good
+292864,recovered bad
+150728,uncertain
+514000,uncertain
+111299,recovered good
+168034,credit default
+486759,good
+423784,uncertain
+353822,recovered good
+352651,good
+341475,uncertain
+63046,good
+61098,uncertain
+501103,uncertain
+160755,fraud
+56356,good
+168848,good
+294379,uncertain
+219417,good
+227851,recovered good
+418778,recovered bad
+408246,uncertain
+200487,uncertain
+52965,good
+107762,uncertain
+353693,uncertain
+187843,fraud
+429020,uncertain
+36359,good
+520957,uncertain
+249125,good
+369642,uncertain
+133194,fraud
+152579,uncertain
+276559,uncertain
+26196,good
+65957,recovered good
+6499,recovered good
+68706,credit default
+533325,good
+248277,uncertain
+349600,credit default
+309944,credit default
+330757,recovered bad
+326048,fraud
+230034,recovered good
+171593,uncertain
+107331,recovered good
+257535,good
+149644,credit default
+119968,fraud
+490858,uncertain
+25061,uncertain
+16895,credit default
+210182,uncertain
+73989,good
+125041,good
+49923,good
+176564,good
+237384,recovered bad
+88456,uncertain
+369053,good
+434299,good
+462363,good
+453426,uncertain
+33283,good
+199251,credit default
+378540,good
+508524,good
+375141,recovered good
+83758,credit default
+9124,good
+225252,uncertain
+521281,good
+484525,credit default
+68367,good
+16698,credit default
+286509,good
+382207,recovered good
+448755,recovered good
+317616,good
+284256,good
+274366,recovered bad
+454949,good
+211904,good
+289242,good
+487899,good
+216627,good
+323977,good
+206724,credit default
+236084,good
+152811,good
+17185,good
+495644,uncertain
+125560,good
+299663,uncertain
+394051,good
+50732,uncertain
+257223,uncertain
+26678,good
+531131,uncertain
+9814,credit default
+422903,good
+459755,credit default
+9197,good
+322178,uncertain
+46741,credit default
+27315,recovered good
+71080,uncertain
+94516,fraud
+480595,uncertain
+358316,good
+234156,good
+196717,good
+299057,good
+529432,good
+485140,uncertain
+174278,good
+31049,uncertain
+371175,good
+390172,uncertain
+205278,fraud
+214452,uncertain
+342545,uncertain
+144794,credit default
+387695,fraud
+321454,good
+415967,good
+196951,good
+332374,good
+127584,recovered bad
+162677,good
+114813,fraud
+54241,uncertain
+36646,fraud
+253066,uncertain
+421,recovered bad
+330064,good
+150830,fraud
+204586,recovered good
+186112,recovered bad
+43163,good
+153557,uncertain
+31705,good
+294167,credit default
+421736,uncertain
+342424,credit default
+168630,recovered bad
+226487,uncertain
+102970,good
+500099,uncertain
+45502,uncertain
+465340,uncertain
+36491,recovered bad
+175560,good
+191491,recovered good
+523697,uncertain
+538135,uncertain
+348367,uncertain
+357502,credit default
+203750,uncertain
+406912,good
+1551,credit default
+213554,fraud
+136880,good
+331102,good
+484119,good
+518776,good
+87637,good
+388400,uncertain
+310421,good
+433978,good
+73202,uncertain
+347572,good
+146192,uncertain
+199557,good
+175813,uncertain
+496077,uncertain
+50690,uncertain
+342415,good
+151477,good
+325078,good
+152260,good
+253267,good
+420159,uncertain
+209483,uncertain
+478301,uncertain
+263319,good
+14517,credit default
+72140,uncertain
+506582,uncertain
+264912,good
+286952,good
+467563,uncertain
+372716,credit default
+587762,uncertain
+483251,uncertain
+408765,uncertain
+155751,good
+71312,fraud
+164770,good
+170561,good
+217408,good
+285388,uncertain
+208627,recovered good
+240078,good
+604617,fraud
+245085,good
+226644,recovered good
+248736,credit default
+106245,good
+264925,uncertain
+485097,good
+105768,good
+414846,good
+411460,uncertain
+510340,good
+201067,good
+283143,fraud
+13712,uncertain
+182259,credit default
+115934,good
+295684,good
+300077,uncertain
+25247,recovered bad
+256170,good
+254875,uncertain
+348809,good
+567994,uncertain
+274166,credit default
+473892,uncertain
+297291,good
+389753,fraud
+251638,uncertain
+409138,uncertain
+276310,good
+54350,good
+25190,good
+25080,good
+71351,recovered bad
+353507,uncertain
+251313,good
+24405,fraud
+236946,good
+156467,good
+561143,uncertain
+59518,fraud
+422602,good
+79341,good
+126164,uncertain
+385675,good
+388842,good
+551320,uncertain
+374889,uncertain
+73376,good
+184451,good
+432170,good
+183062,good
+88949,uncertain
+326215,uncertain
+21826,uncertain
+209643,uncertain
+416045,good
+130566,recovered bad
+77870,good
+370083,good
+26826,recovered bad
+50270,uncertain
+254729,uncertain
+463556,uncertain
+229884,good
+37661,good
+53686,credit default
+507230,good
+496573,uncertain
+34287,uncertain
+328382,good
+444239,good
+510820,uncertain
+321284,fraud
+23770,recovered bad
+52201,good
+243382,credit default
+444730,recovered bad
+258290,uncertain
+168072,credit default
+58293,recovered bad
+100544,credit default
+379304,uncertain
+456524,uncertain
+379720,good
+154576,good
+170613,good
+224645,recovered bad
+256172,good
+478045,uncertain
+223125,uncertain
+238611,good
+263770,good
+395404,good
+87969,good
+102394,good
+141571,good
+506589,uncertain
+266114,good
+193063,uncertain
+418679,uncertain
+206917,uncertain
+403516,uncertain
+412677,uncertain
+58271,credit default
+118503,fraud
+206655,credit default
+150454,good
+556600,credit default
+259262,good
+101067,credit default
+230017,fraud
+174750,uncertain
+368154,uncertain
+232147,good
+234305,recovered bad
+185473,good
+567668,uncertain
+492832,good
+18955,recovered good
+29707,good
+301159,uncertain
+53905,recovered bad
+242500,uncertain
+219641,uncertain
+398431,good
+381831,good
+97720,fraud
+479852,uncertain
+256523,uncertain
+71613,good
+388040,uncertain
+155709,good
+399547,uncertain
+104787,credit default
+183601,fraud
+435820,uncertain
+105485,uncertain
+278324,good
+150295,recovered good
+282727,uncertain
+449238,uncertain
+36119,recovered good
+418212,good
+222468,uncertain
+189940,fraud
+31218,uncertain
+70999,credit default
+333727,good
+435167,uncertain
+152649,fraud
+58704,uncertain
+300232,good
+289438,good
+383677,uncertain
+341491,good
+452439,good
+336853,good
+234165,uncertain
+393644,good
+224322,good
+2452,recovered bad
+216394,good
+291186,good
+246347,good
+152382,good
+437086,good
+525854,fraud
+161344,good
+146615,recovered bad
+165788,recovered good
+295063,good
+157352,good
+380249,uncertain
+320334,credit default
+262395,good
+149124,recovered bad
+94278,credit default
+218264,credit default
+226845,credit default
+218841,uncertain
+64971,credit default
+79655,uncertain
+414577,good
+110571,good
+63390,fraud
+207078,uncertain
+204057,uncertain
+39892,uncertain
+36536,credit default
+409578,uncertain
+24713,good
+255578,good
+139731,fraud
+362634,credit default
+442537,uncertain
+201429,good
+516434,uncertain
+353267,good
+377677,uncertain
+49725,uncertain
+253615,uncertain
+525221,fraud
+153354,good
+420751,uncertain
+243959,uncertain
+289927,good
+377020,good
+28073,uncertain
+338261,good
+362531,uncertain
+534434,uncertain
+346744,uncertain
+153712,good
+238625,credit default
+69791,uncertain
+92772,good
+116395,credit default
+1356,credit default
+480487,good
+501067,uncertain
+463193,uncertain
+434588,uncertain
+150049,credit default
+303611,good
+491743,good
+143392,good
+465065,fraud
+346371,good
+47114,recovered good
+403537,good
+209175,good
+169352,good
+175152,credit default
+62680,uncertain
+141459,good
+149338,good
+289673,uncertain
+424026,good
+120321,good
+404137,good
+429864,uncertain
+569892,uncertain
+302485,credit default
+519698,uncertain
+310039,uncertain
+135038,fraud
+252346,uncertain
+265017,good
+125030,good
+119551,good
+304173,good
+324370,good
+233315,uncertain
+437114,uncertain
+176635,credit default
+247039,good
+337250,uncertain
+77053,good
+329819,credit default
+65659,uncertain
+44553,recovered bad
+394693,good
+311618,good
+199130,good
+361350,good
+486163,good
+91963,uncertain
+610881,fraud
+194076,good
+203581,good
+361502,fraud
+132616,good
+158323,credit default
+108519,uncertain
+122626,fraud
+337495,recovered good
+57534,recovered bad
+272322,good
+43644,credit default
+255071,good
+431151,uncertain
+133659,uncertain
+219213,recovered bad
+95461,credit default
+455065,uncertain
+96215,good
+463997,credit default
+280736,good
+288432,fraud
+349897,uncertain
+284128,uncertain
+541285,uncertain
+574934,good
+121042,good
+384171,good
+395513,credit default
+383219,good
+405139,good
+119934,credit default
+28605,good
+251686,good
+422820,recovered good
+192783,credit default
+106816,uncertain
+20065,recovered bad
+281594,uncertain
+96026,credit default
+384804,uncertain
+489438,uncertain
+244922,uncertain
+448551,uncertain
+336065,good
+165180,good
+231807,recovered good
+39462,good
+183388,fraud
+156557,uncertain
+61481,uncertain
+46760,recovered bad
+521201,uncertain
+385807,uncertain
+263316,credit default
+43324,good
+241299,good
+243996,fraud
+269652,good
+171786,good
+266235,uncertain
+285627,uncertain
+6788,good
+25317,uncertain
+78979,uncertain
+5887,credit default
+147467,good
+366687,good
+413283,uncertain
+162315,fraud
+374440,uncertain
+169021,good
+8393,recovered bad
+510153,uncertain
+366948,uncertain
+352443,good
+392938,uncertain
+128712,credit default
+486040,good
+390198,credit default
+229391,good
+94185,fraud
+166733,uncertain
+515445,uncertain
+42236,uncertain
+374256,good
+414188,good
+499216,uncertain
+526471,good
+403399,uncertain
+385805,good
+448208,uncertain
+323272,good
+443782,uncertain
+412380,good
+211502,credit default
+413323,good
+175878,good
+198297,good
+212483,uncertain
+382942,uncertain
+389281,good
+55321,uncertain
+158377,good
+383039,good
+414488,good
+286533,good
+415896,uncertain
+392409,uncertain
+370015,uncertain
+116332,credit default
+400448,good
+89454,uncertain
+246533,credit default
+282385,uncertain
+144789,uncertain
+334664,fraud
+206103,uncertain
+108015,good
+312704,uncertain
+175612,credit default
+474639,fraud
+399802,good
+308776,uncertain
+378241,good
+357138,good
+126714,credit default
+146057,fraud
+265774,uncertain
+149423,credit default
+386660,good
+463474,uncertain
+11487,recovered bad
+226096,recovered good
+68915,credit default
+119280,uncertain
+217345,good
+15131,recovered good
+153797,uncertain
+129330,good
+348777,good
+99059,recovered bad
+125220,good
+4832,credit default
+271631,good
+463649,fraud
+512454,uncertain
+87942,good
+171676,credit default
+514614,uncertain
+50097,uncertain
+513760,uncertain
+129755,recovered bad
+309565,recovered good
+182186,uncertain
+274151,good
+382108,uncertain
+211593,recovered bad
+343898,fraud
+294232,uncertain
+159461,good
+47906,good
+388833,uncertain
+497952,uncertain
+133105,credit default
+557933,uncertain
+456968,uncertain
+444003,good
+505486,good
+617197,fraud
+365261,good
+351293,good
+419008,uncertain
+135609,uncertain
+415051,uncertain
+165577,good
+212357,uncertain
+196583,recovered bad
+144388,good
+419592,uncertain
+90512,good
+78233,uncertain
+300339,fraud
+204804,good
+39282,uncertain
+159672,credit default
+114788,uncertain
+105413,uncertain
+324211,good
+332478,good
+531478,uncertain
+399334,fraud
+428766,uncertain
+256918,good
+188111,good
+282007,uncertain
+182407,good
+167732,uncertain
+361235,uncertain
+47547,credit default
+525087,uncertain
+50240,recovered bad
+285197,good
+358593,good
+179737,good
+36399,good
+146509,good
+169534,fraud
+154797,recovered bad
+91226,good
+382713,fraud
+521389,uncertain
+139406,good
+282231,credit default
+482024,good
+196602,good
+353312,uncertain
+228188,credit default
+119319,fraud
+4174,credit default
+208076,uncertain
+188976,fraud
+351348,uncertain
+546334,fraud
+110167,good
+194405,good
+460706,good
+417663,uncertain
+310724,good
+185342,recovered bad
+160120,fraud
+230445,good
+273290,recovered bad
+467149,uncertain
+126348,uncertain
+188804,recovered good
+479401,good
+196919,good
+143695,good
+476425,uncertain
+129392,credit default
+358164,uncertain
+483491,uncertain
+232082,fraud
+482262,good
+519031,uncertain
+127115,credit default
+379129,good
+308427,uncertain
+493743,uncertain
+4460,recovered bad
+208985,recovered good
+358257,uncertain
+395308,uncertain
+330868,good
+118034,credit default
+40773,recovered bad
+519209,uncertain
+51391,recovered good
+526320,uncertain
+469826,uncertain
+230895,good
+286092,good
+65102,credit default
+146893,credit default
+63464,good
+560680,uncertain
+440213,uncertain
+416994,good
+450630,good
+272086,good
+72859,good
+473293,good
+452022,uncertain
+358762,good
+291923,uncertain
+55626,credit default
+314885,uncertain
+378070,fraud
+130949,recovered bad
+115567,fraud
+226305,uncertain
+41676,fraud
+79892,good
+159101,good
+199928,good
+369086,good
+189939,good
+444337,good
+421392,uncertain
+540968,fraud
+3046,recovered good
+42627,good
+398601,good
+539837,uncertain
+70605,good
+55406,uncertain
+453871,uncertain
+364436,uncertain
+520576,fraud
+399718,uncertain
+399042,good
+300924,good
+402581,credit default
+309379,good
+184338,recovered bad
+73906,recovered bad
+483360,fraud
+391254,uncertain
+28364,recovered bad
+470871,uncertain
+427471,uncertain
+455432,uncertain
+13809,recovered bad
+17460,recovered bad
+242557,uncertain
+249898,uncertain
+446509,good
+258695,uncertain
+131049,recovered good
+426131,good
+322430,good
+220686,uncertain
+494906,uncertain
+326735,good
+52392,good
+93347,credit default
+58088,uncertain
+193033,good
+146649,uncertain
+203231,recovered good
+497489,uncertain
+54711,credit default
+513676,uncertain
+32082,uncertain
+54509,uncertain
+508850,uncertain
+120669,good
+76224,good
+257188,good
+528154,credit default
+117034,good
+272809,uncertain
+324956,good
+148761,uncertain
+385051,uncertain
+162765,good
+55681,good
+314593,good
+295679,good
+96921,uncertain
+333733,good
+197500,uncertain
+157482,good
+164346,good
+172899,fraud
+365758,uncertain
+80843,good
+376737,good
+60572,recovered bad
+71477,uncertain
+262001,uncertain
+157257,credit default
+166325,good
+102651,credit default
+59499,fraud
+435633,uncertain
+528814,fraud
+144942,uncertain
+248072,credit default
+321834,uncertain
+12764,good
+447753,uncertain
+499790,uncertain
+17648,good
+86312,good
+167489,good
+535581,uncertain
+353970,uncertain
+128136,good
+523521,uncertain
+62208,recovered bad
+335141,good
+114398,good
+301458,fraud
+339839,uncertain
+162057,good
+321383,good
+156423,recovered good
+564495,uncertain
+381539,uncertain
+65222,uncertain
+68006,credit default
+295186,good
+412837,uncertain
+441081,credit default
+73439,fraud
+119827,credit default
+441677,uncertain
+512093,uncertain
+167712,fraud
+354061,recovered good
+45695,fraud
+51769,credit default
+134646,credit default
+107901,recovered good
+300772,good
+455712,good
+118457,recovered good
+144749,good
+430716,uncertain
+249065,recovered bad
+229951,good
+407249,uncertain
+441651,good
+367530,uncertain
+565574,uncertain
+238847,fraud
+202540,good
+384969,fraud
+357535,credit default
+362513,good
+193635,good
+520332,uncertain
+470704,uncertain
+414437,uncertain
+71106,credit default
+337064,uncertain
+183736,good
+299426,uncertain
+205074,good
+495415,good
+367007,uncertain
+193375,recovered good
+293126,good
+199218,uncertain
+23186,uncertain
+168616,uncertain
+316552,good
+213236,good
+172245,good
+43451,credit default
+528038,uncertain
+157858,uncertain
+247998,good
+485962,uncertain
+366665,good
+10985,credit default
+489205,good
+89306,uncertain
+21376,recovered bad
+15259,uncertain
+323287,fraud
+156589,good
+94706,good
+43239,recovered good
+245740,uncertain
+78115,good
+189394,good
+299171,good
+11625,credit default
+241086,fraud
+20854,uncertain
+126764,good
+271357,good
+16845,uncertain
+19762,credit default
+133264,fraud
+162313,recovered good
+119761,good
+495682,uncertain
+233443,good
+100589,good
+353645,good
+56806,credit default
+414996,fraud
+80660,recovered bad
+219721,uncertain
+425059,fraud
+159447,good
+280590,uncertain
+337850,uncertain
+50776,good
+152220,uncertain
+105464,uncertain
+57124,recovered bad
+301764,uncertain
+512009,good
+186038,good
+167493,good
+381521,uncertain
+95303,good
+86962,credit default
+473027,uncertain
+383092,good
+324208,uncertain
+260399,uncertain
+205599,recovered bad
+72160,fraud
+147945,fraud
+223344,good
+166504,good
+115267,good
+102973,credit default
+149535,recovered good
+249124,uncertain
+276244,fraud
+68329,fraud
+64076,credit default
+20031,uncertain
+80869,uncertain
+279025,fraud
+234837,good
+442243,uncertain
+363836,uncertain
+32446,good
+195591,recovered good
+438512,uncertain
+104027,credit default
+154938,fraud
+251400,uncertain
+300309,good
+563691,uncertain
+275816,uncertain
+139650,recovered bad
+108578,good
+199908,credit default
+160226,uncertain
+129798,good
+49574,good
+53506,good
+16490,credit default
+252961,uncertain
+364685,uncertain
+115887,credit default
+215502,uncertain
+468784,uncertain
+513379,uncertain
+32570,uncertain
+6115,recovered bad
+380489,uncertain
+144670,good
+518170,good
+32806,recovered good
+356542,good
+267923,uncertain
+220047,good
+320967,recovered good
+117481,fraud
+515689,uncertain
+426441,uncertain
+261957,good
+342554,good
+140359,uncertain
+399771,good
+476775,uncertain
+132107,recovered good
+388972,uncertain
+500601,good
+64287,good
+184957,recovered good
+524647,uncertain
+42270,recovered bad
+413469,good
+102209,uncertain
+465909,uncertain
+155937,uncertain
+300134,good
+380541,fraud
+306144,uncertain
+316426,fraud
+337844,fraud
+392421,uncertain
+338460,uncertain
+201007,fraud
+425757,uncertain
+175123,good
+8207,good
+332227,uncertain
+387052,uncertain
+412246,good
+522562,good
+388807,good
+43634,recovered good
+131090,fraud
+55952,uncertain
+135829,fraud
+361923,credit default
+317558,uncertain
+330428,uncertain
+496800,uncertain
+296127,good
+439439,good
+249969,good
+299768,uncertain
+380176,recovered good
+263887,fraud
+103772,good
+344555,good
+349863,recovered good
+427064,uncertain
+564877,uncertain
+240795,credit default
+280668,uncertain
+392359,good
+54874,uncertain
+427089,good
+181556,uncertain
+293064,good
+75822,uncertain
+50700,good
+415720,uncertain
+200461,good
+291582,credit default
+66343,credit default
+351808,uncertain
+484650,uncertain
+282291,uncertain
+241405,good
+134607,good
+519798,uncertain
+196901,good
+68746,uncertain
+377348,uncertain
+501398,uncertain
+49566,recovered bad
+28154,credit default
+311564,good
+363789,uncertain
+254285,uncertain
+31807,credit default
+280007,good
+414665,good
+429447,uncertain
+421175,credit default
+16960,uncertain
+289103,good
+69629,good
+190665,credit default
+380013,good
+2716,credit default
+316992,credit default
+268365,good
+415453,uncertain
+190254,recovered good
+528923,good
+293697,recovered good
+384673,uncertain
+168926,good
+341045,good
+516647,uncertain
+427245,recovered bad
+18032,uncertain
+370711,credit default
+506285,good
+426094,uncertain
+282679,fraud
+62359,credit default
+464701,fraud
+263236,good
+89972,fraud
+55139,uncertain
+283585,uncertain
+441489,uncertain
+110975,good
+388650,good
+130184,recovered bad
+267794,good
+89891,credit default
+410771,uncertain
+400394,good
+240987,recovered bad
+208702,good
+82962,good
+300735,uncertain
+307342,uncertain
+34476,credit default
+442694,uncertain
+526998,uncertain
+498543,good
+103093,credit default
+257729,uncertain
+59699,fraud
+310067,good
+269982,uncertain
+157458,good
+218978,good
+382520,uncertain
+518826,uncertain
+505345,uncertain
+256726,good
+161504,credit default
+98636,credit default
+292671,uncertain
+224275,recovered good
+22928,uncertain
+53163,uncertain
+533472,good
+10303,uncertain
+567897,uncertain
+362621,uncertain
+62774,fraud
+447229,recovered good
+65378,recovered bad
+359088,recovered bad
+261457,good
+320573,good
+472978,uncertain
+488873,good
+363914,uncertain
+363410,uncertain
+156276,good
+370,good
+292271,uncertain
+127876,fraud
+500301,uncertain
+17461,uncertain
+307667,good
+495253,credit default
+175754,good
+527771,good
+251659,good
+323543,good
+373680,good
+368734,good
+501225,good
+528912,fraud
+73556,credit default
+59126,credit default
+426412,good
+316523,good
+148898,fraud
+344950,good
+123901,recovered bad
+82168,credit default
+334390,good
+260377,credit default
+152737,good
+312907,recovered good
+200338,uncertain
+354379,fraud
+30355,good
+80380,good
+366560,good
+73746,good
+116127,fraud
+437847,uncertain
+60200,credit default
+121648,good
+217289,recovered bad
+174670,good
+119809,recovered good
+289597,uncertain
+70505,credit default
+452120,uncertain
+510431,good
+275703,uncertain
+129223,recovered bad
+24337,recovered bad
+89903,good
+147310,uncertain
+487896,uncertain
+163449,fraud
+148017,recovered good
+33230,good
+403168,uncertain
+197416,good
+231751,good
+275547,credit default
+55548,good
+193000,good
+154865,credit default
+314385,good
+52675,uncertain
+138886,good
+493233,good
+165453,fraud
+125716,good
+295131,uncertain
+272513,good
+262748,recovered bad
+454001,good
+331599,good
+363803,credit default
+336567,uncertain
+339278,uncertain
+135294,credit default
+44292,uncertain
+512947,uncertain
+169860,recovered bad
+233631,uncertain
+344535,uncertain
+100229,fraud
+378595,uncertain
+122627,good
+120906,good
+244093,good
+29571,fraud
+238662,good
+140802,good
+386934,good
+310431,uncertain
+252254,good
+431897,good
+380677,uncertain
+153485,uncertain
+42683,credit default
+425946,good
+570715,uncertain
+15417,uncertain
+122795,good
+222774,good
+251662,uncertain
+490639,uncertain
+252975,recovered bad
+201985,recovered good
+158922,recovered good
+40017,uncertain
+100002,good
+76578,good
+281374,uncertain
+297540,uncertain
+366800,uncertain
+206217,good
+56880,uncertain
+452708,uncertain
+402115,credit default
+424936,recovered bad
+251701,recovered good
+508796,credit default
+452808,uncertain
+176599,good
+32149,good
+341967,uncertain
+546936,uncertain
+426983,good
+127058,uncertain
+7334,credit default
+407008,uncertain
+52827,fraud
+315640,uncertain
+175065,fraud
+227378,uncertain
+359329,fraud
+4863,credit default
+104871,good
+18031,uncertain
+189646,good
+31213,recovered bad
+335390,uncertain
+539117,uncertain
+103011,uncertain
+234514,uncertain
+184428,fraud
+54826,recovered bad
+253488,good
+313300,uncertain
+315386,credit default
+205658,credit default
+555422,uncertain
+240571,recovered good
+496626,credit default
+81670,credit default
+497375,uncertain
+539168,uncertain
+179128,recovered bad
+489905,uncertain
+410383,uncertain
+191391,credit default
+392930,good
+461886,good
+20550,recovered good
+222074,uncertain
+180683,good
+219520,good
+152896,uncertain
+188921,credit default
+429705,uncertain
+422229,good
+453659,uncertain
+407315,good
+311925,uncertain
+404815,good
+101354,credit default
+271874,uncertain
+496815,uncertain
+147497,fraud
+232035,uncertain
+404460,good
+170460,good
+154020,good
+23385,uncertain
+204765,credit default
+377227,uncertain
+59790,credit default
+231909,good
+355626,good
+300005,good
+24757,recovered bad
+119655,good
+18088,credit default
+26572,good
+384372,good
+125163,good
+373880,credit default
+288057,good
+146817,good
+478996,uncertain
+136356,credit default
+107514,recovered bad
+324079,good
+515364,uncertain
+400044,uncertain
+533533,uncertain
+309685,uncertain
+394151,good
+152844,good
+56579,fraud
+543247,uncertain
+259398,uncertain
+59691,good
+322122,good
+145347,good
+36152,uncertain
+334720,good
+155627,good
+327049,good
+209065,credit default
+53989,fraud
+100693,credit default
+100623,good
+50168,good
+325420,good
+27555,credit default
+572664,uncertain
+467389,uncertain
+205638,good
+6167,credit default
+412535,uncertain
+220201,good
+247910,good
+404369,uncertain
+202237,uncertain
+353612,good
+270069,good
+33168,good
+387176,fraud
+293101,good
+34956,uncertain
+116795,credit default
+327487,good
+117576,credit default
+19363,uncertain
+304416,uncertain
+448019,fraud
+107413,uncertain
+19429,uncertain
+491407,uncertain
+136228,fraud
+149878,good
+175236,uncertain
+565970,uncertain
+202408,recovered good
+303910,good
+378955,uncertain
+473076,good
+152876,recovered good
+25582,uncertain
+159428,recovered good
+162525,good
+103324,uncertain
+240736,uncertain
+292737,recovered good
+145147,fraud
+122658,credit default
+57920,fraud
+322347,good
+12054,credit default
+385024,uncertain
+581924,uncertain
+376862,credit default
+33406,credit default
+142074,good
+3904,credit default
+315939,uncertain
+181391,good
+237989,recovered good
+138352,good
+156016,uncertain
+43100,fraud
+95955,good
+241650,good
+410542,uncertain
+307308,good
+393065,recovered good
+397132,uncertain
+250950,uncertain
+446422,uncertain
+320294,good
+159139,uncertain
+249114,good
+242558,uncertain
+244719,good
+321262,good
+9688,uncertain
+496547,good
+204203,good
+313979,uncertain
+173607,good
+468813,uncertain
+268753,good
+198810,fraud
+109984,credit default
+59016,good
+425737,uncertain
+131825,good
+453881,good
+101940,good
+111540,uncertain
+15885,good
+173449,uncertain
+111539,credit default
+335148,good
+201148,uncertain
+281210,good
+417750,fraud
+74522,uncertain
+331554,good
+220771,credit default
+123470,recovered good
+283362,credit default
+240326,good
+47461,good
+169732,recovered bad
+103679,credit default
+62244,credit default
+74341,good
+57595,uncertain
+560628,uncertain
+251193,uncertain
+570542,uncertain
+498932,uncertain
+487354,uncertain
+352604,good
+458066,uncertain
+3584,uncertain
+53900,uncertain
+97530,uncertain
+282747,uncertain
+483177,uncertain
+609840,fraud
+342786,good
+286328,credit default
+224753,uncertain
+154221,good
+146238,good
+537937,good
+139773,good
+411975,fraud
+526047,uncertain
+206842,recovered bad
+311387,good
+347679,uncertain
+109244,good
+20249,recovered good
+98866,fraud
+236596,good
+115111,good
+160687,good
+337041,uncertain
+421608,uncertain
+332999,good
+334410,good
+247122,uncertain
+180602,good
+460637,fraud
+343694,good
+76005,fraud
+156139,good
+489290,good
+171717,recovered good
+98837,uncertain
+109864,good
+367328,good
+11020,recovered bad
+144152,recovered good
+135758,recovered bad
+314795,good
+74259,uncertain
+248980,uncertain
+409554,good
+441048,good
+470237,good
+340916,uncertain
+125269,good
+269592,good
+267935,uncertain
+44196,fraud
+441734,uncertain
+455140,uncertain
+103578,recovered good
+50478,credit default
+7203,credit default
+434447,uncertain
+529870,fraud
+175067,uncertain
+107765,fraud
+133996,good
+201936,good
+94881,recovered bad
+88052,fraud
+327847,uncertain
+205047,good
+397380,fraud
+112614,good
+349191,uncertain
+216826,recovered good
+243917,good
+53939,credit default
+359715,uncertain
+276755,good
+97999,recovered good
+288243,uncertain
+25855,good
+13631,uncertain
+88923,uncertain
+35278,credit default
+190598,good
+118512,good
+99259,credit default
+486173,uncertain
+210244,credit default
+291684,uncertain
+108701,fraud
+318406,good
+349355,good
+498149,good
+329766,uncertain
+333750,credit default
+258158,good
+274822,uncertain
+358377,good
+402615,uncertain
+539441,good
+516490,good
+95208,good
+99705,fraud
+245027,fraud
+455542,credit default
+298754,recovered bad
+447955,uncertain
+123475,fraud
+391650,uncertain
+182409,good
+350741,good
+460545,good
+367642,good
+84334,fraud
+533951,uncertain
+137805,uncertain
+411310,good
+19863,recovered bad
+284991,good
+104711,recovered good
+219246,good
+124870,credit default
+47801,good
+130520,good
+501821,uncertain
+490216,uncertain
+251437,uncertain
+131767,good
+222687,good
+20592,uncertain
+507284,uncertain
+498529,credit default
+105903,fraud
+159226,good
+434446,credit default
+187782,uncertain
+165352,good
+125331,good
+527968,good
+251169,credit default
+417353,credit default
+455484,good
+328030,good
+323334,good
+243473,good
+244780,good
+506821,uncertain
+402269,credit default
+31831,uncertain
+489545,good
+122564,good
+448091,uncertain
+262917,credit default
+350835,uncertain
+122131,good
+617353,fraud
+297597,fraud
+493530,recovered good
+283723,good
+59504,recovered bad
+229928,uncertain
+286400,good
+68249,uncertain
+100929,good
+194756,good
+227965,good
+120077,recovered good
+517779,uncertain
+367009,uncertain
+373267,good
+265144,uncertain
+391469,good
+490287,uncertain
+373593,uncertain
+68022,recovered good
+116321,recovered bad
+50651,fraud
+40765,good
+158107,credit default
+39419,good
+387305,good
+9258,uncertain
+507975,uncertain
+261229,good
+434785,uncertain
+135968,good
+95476,recovered good
+54623,credit default
+3551,good
+424166,good
+562143,uncertain
+75879,uncertain
+261595,good
+160843,recovered good
+386651,uncertain
+201132,good
+84076,good
+76360,uncertain
+93035,uncertain
+276734,good
+34071,uncertain
+294714,good
+361268,fraud
+20364,uncertain
+55676,uncertain
+60925,good
+286625,good
+423376,uncertain
+113572,good
+512129,uncertain
+390862,uncertain
+137066,credit default
+168309,good
+258531,good
+506578,uncertain
+283957,good
+70966,good
+508140,uncertain
+145340,uncertain
+47942,fraud
+328902,uncertain
+238273,good
+347777,good
+467509,uncertain
+59808,good
+281975,good
+330073,credit default
+22696,uncertain
+65210,recovered good
+55185,fraud
+126392,credit default
+355080,uncertain
+355824,uncertain
+405727,uncertain
+236544,good
+321541,uncertain
+485848,credit default
+306020,uncertain
+359996,uncertain
+294036,uncertain
+122890,uncertain
+267066,good
+517335,uncertain
+17837,recovered bad
+338003,good
+278244,uncertain
+291877,good
+131506,good
+349820,good
+367774,good
+447097,uncertain
+298578,uncertain
+372348,uncertain
+57698,credit default
+253811,recovered bad
+545704,fraud
+165262,good
+300810,uncertain
+44947,uncertain
+507423,uncertain
+127250,good
+411715,uncertain
+3954,uncertain
+352518,good
+501660,uncertain
+230953,good
+329120,good
+215791,good
+581093,good
+315013,good
+334219,good
+368672,good
+165560,good
+6181,recovered bad
+482782,fraud
+361851,good
+448621,uncertain
+489897,fraud
+300121,uncertain
+44444,uncertain
+527406,credit default
+179918,good
+348459,uncertain
+235458,good
+98310,credit default
+197967,good
+194026,good
+540374,uncertain
+320068,credit default
+276558,uncertain
+14216,uncertain
+370883,good
+20428,uncertain
+455002,uncertain
+247291,good
+11692,credit default
+333048,uncertain
+418220,good
+1120,fraud
+1868,uncertain
+44528,uncertain
+159839,recovered good
+222405,uncertain
+330194,uncertain
+238752,uncertain
+308324,uncertain
+375772,uncertain
+104596,credit default
+329520,uncertain
+256637,good
+389172,good
+428155,uncertain
+133849,good
+103631,credit default
+381445,uncertain
+432606,good
+564395,uncertain
+385875,uncertain
+530927,uncertain
+429865,good
+220223,good
+196547,good
+518063,fraud
+17114,credit default
+249097,uncertain
+24196,uncertain
+465975,uncertain
+156043,uncertain
+262777,good
+448556,uncertain
+132028,good
+193580,good
+149362,uncertain
+166708,recovered good
+522082,uncertain
+104378,good
+521301,good
+356456,credit default
+400559,good
+351430,credit default
+59452,uncertain
+474803,fraud
+182916,good
+61251,good
+513744,uncertain
+516212,good
+427824,uncertain
+25726,good
+36513,fraud
+516775,uncertain
+428690,credit default
+242092,good
+181136,recovered good
+253445,uncertain
+350891,uncertain
+203655,credit default
+522971,uncertain
+460510,good
+70760,fraud
+445754,good
+299444,good
+192524,fraud
+171206,fraud
+11202,good
+191390,recovered bad
+349162,good
+3719,recovered bad
+101529,uncertain
+376967,good
+56189,uncertain
+438775,good
+254908,good
+314837,fraud
+101177,credit default
+149010,good
+310109,uncertain
+100455,good
+313574,good
+234497,uncertain
+423729,good
+246257,uncertain
+398607,uncertain
+24051,good
+73701,credit default
+99863,uncertain
+61300,good
+473071,good
+227222,good
+47409,credit default
+124529,credit default
+108146,fraud
+231326,good
+7384,credit default
+518968,uncertain
+214333,recovered bad
+318625,good
+57133,recovered good
+301749,recovered good
+385457,good
+26584,credit default
+434515,good
+1052,good
+466227,fraud
+529485,uncertain
+311275,good
+443378,uncertain
+8417,good
+493862,good
+446319,good
+419927,uncertain
+234813,good
+104150,good
+276963,good
+98029,good
+14398,good
+423662,uncertain
+388417,good
+287102,good
+247264,good
+189483,good
+11947,good
+527241,uncertain
+234020,uncertain
+115560,good
+47661,good
+64746,fraud
+556335,good
+405274,good
+120829,good
+100868,credit default
+117675,uncertain
+456791,uncertain
+161703,good
+444294,recovered good
+34902,recovered bad
+511885,uncertain
+140949,credit default
+381159,uncertain
+19804,uncertain
+577437,fraud
+31936,recovered bad
+267770,good
+463947,uncertain
+131455,good
+361172,uncertain
+175759,uncertain
+256959,uncertain
+247530,uncertain
+24577,credit default
+195479,good
+363365,fraud
+198528,fraud
+45790,credit default
+356898,uncertain
+169170,credit default
+135470,recovered bad
+568343,uncertain
+39606,uncertain
+465922,uncertain
+72752,credit default
+40912,fraud
+349702,good
+383713,good
+149540,good
+5794,credit default
+162609,good
+523481,uncertain
+243443,good
+334678,uncertain
+52608,uncertain
+454408,good
+380623,uncertain
+553195,uncertain
+16147,uncertain
+122730,credit default
+194360,good
+403145,credit default
+252593,good
+288160,good
+542614,good
+498409,uncertain
+119549,uncertain
+44383,credit default
+471122,good
+215434,good
+107705,good
+386265,uncertain
+484566,good
+222758,good
+285960,uncertain
+117628,recovered good
+100807,recovered good
+513895,uncertain
+437833,good
+67199,good
+55134,uncertain
+55192,uncertain
+79326,fraud
+73767,credit default
+514735,uncertain
+480566,uncertain
+171295,uncertain
+346023,uncertain
+211878,good
+49870,fraud
+43508,good
+290464,good
+273073,recovered bad
+150630,good
+569712,uncertain
+119972,fraud
+516048,good
+222954,good
+526730,uncertain
+217030,good
+67153,credit default
+428379,uncertain
+493725,uncertain
