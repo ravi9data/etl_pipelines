@@ -1,0 +1,27 @@
+BEGIN;
+
+DELETE
+FROM
+	staging_price_collection.ebay_eu
+	USING staging_price_collection.ebay_eu_copy_s3
+WHERE
+	ebay_eu.item_id = ebay_eu_copy_s3.item_id;
+
+INSERT INTO staging_price_collection.ebay_eu
+SELECT
+	item_id
+	,ebay_product_name
+	,price
+	,auction_type
+	,product_name
+	,brand
+	,product_sku
+	,ebay
+	,crawled_at
+	,condition
+	,'DE' AS country
+	,CURRENT_TIMESTAMP AS inserted_at
+FROM
+	staging_price_collection.ebay_eu_copy_s3;
+
+COMMIT;

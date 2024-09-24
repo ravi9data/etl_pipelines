@@ -1,0 +1,1 @@
+DROP TABLE stg_events_dl.grover_button_impressions_agg;
