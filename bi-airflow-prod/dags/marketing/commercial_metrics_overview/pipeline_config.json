@@ -1,0 +1,8 @@
+{
+ "4_dwh_catman": {
+   "directory": "4_dwh_catman",
+   "script_name": [
+     "dm_commercial.commercial_metrics_overview"
+   ]
+ }
+}

@@ -1,0 +1,2 @@
+checks for us_dc_customer_contact:
+  - row_count > 0

@@ -1,0 +1,9 @@
+drop table if exists hightouch_sources.foxway_masterliste_serial_mismatch;
+create table hightouch_sources.foxway_masterliste_serial_mismatch as
+select *
+from dm_recommerce.distinct_foxway_masterliste
+where inventory_id in(
+select inventory_id from dm_recommerce.foxway_masterliste_serial_mismatch
+minus
+select inventory_id
+from dm_recommerce.foxway_masterliste_mapping);

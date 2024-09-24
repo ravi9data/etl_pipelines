@@ -1,0 +1,6 @@
+checks for detailed_view_us_dc:
+  - dpd_count > 0:
+      dpd_count query: |
+        select count(1)
+        from ods_production.detailed_view_us_dc
+        where dpd_new >= 1;

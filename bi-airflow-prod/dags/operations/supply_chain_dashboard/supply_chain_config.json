@@ -1,0 +1,20 @@
+{
+    "da2_4_dwh": {
+      "directory": "4_dwh_ops",
+      "script_name": [
+        "00_inventory_overview",
+        "01_inventory_asset_overview",
+        "02_supply_chain_daily",
+        "02_supply_chain_daily_b2b",
+        "03_supply_chain_weekly"
+      ]
+    },
+    "monitoring": {
+    "directory": "8_monitoring/grover_issues",
+    "script_name": [
+      "oi1",
+      "oi2",
+      "oi3"    
+    ]
+  }
+}

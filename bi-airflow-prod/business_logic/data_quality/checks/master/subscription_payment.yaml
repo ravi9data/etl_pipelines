@@ -1,0 +1,4 @@
+checks for subscription_payment:
+  - freshness(updated_at) < 1d
+  - freshness(paid_date) < 1d
+  - freshness(failed_date) < 2d

@@ -1,0 +1,3 @@
+checks for order:
+  - freshness(created_date) < 1d
+  - freshness(submitted_date) < 1d

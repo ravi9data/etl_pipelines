@@ -1,0 +1,63 @@
+{
+   "4_dwh_bd": {
+     "directory": "4_dwh_bd",
+     "script_name": [
+       "partner_reporting"
+     ]
+   },
+  "4_dwh_catman": {
+    "directory": "4_dwh_catman",
+    "script_name": [
+      "variant_monitoring",
+      "product_reporting",
+      "1_daily_fact_asset",
+      "1_utilization",
+      "contentful_campaigns",
+      "supplier_stock_levels"
+    ]
+  },
+  "4_dwh_core": {
+    "directory": "4_dwh_core",
+    "script_name": [
+      "weekly_reporting_portfolio_overview"
+    ]
+  },
+  "4_dwh_marketing": {
+    "directory": "4_dwh_marketing",
+    "script_name": [
+      "grover_button_impressions"
+    ]
+  },
+  "4_dwh_ops": {
+      "directory": "4_dwh_ops",
+      "script_name": [
+         "subscription_vertragsstrafe_calc",
+         "00_repair_cost_estimates",
+         "product_ean",
+         "system_changes",
+         "shipped_and_damaged_assets",
+         "ups_us_quarantine_inventory_blancco",
+         "ingram_return_funnel"
+         ]
+  },
+  "4_dwh_risk": {
+      "directory": "4_dwh_risk",
+      "script_name": [
+         "sku_market_valuation",
+         "manual_review_performance",
+         "approval_funnel"
+      ]
+   },
+  "4_dwh_product": {
+      "directory": "4_dwh_product",
+      "script_name": [
+         "dm_commercial.commercial_cash_monthly_kpis_reporting"
+    ]
+   },
+   "11_marketing_reporting": {
+       "directory": "11_marketing_reporting",
+       "script_name": [
+          "dm_marketing.influencers_metrics"
+     ]
+    }
+}
