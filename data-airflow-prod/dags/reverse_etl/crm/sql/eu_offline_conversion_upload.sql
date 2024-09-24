@@ -1,0 +1,97 @@
+WITH submitted_orders AS (
+    SELECT
+        a.order_id,
+        a.customer_id,
+        a.submitted_date,
+        CASE WHEN a.marketing_campaign like 'at_%' THEN 'Austria'
+             WHEN a.marketing_campaign like 'de_%' THEN 'Germany'
+             WHEN a.marketing_campaign like 'nl_%' THEN 'Netherlands'
+             WHEN a.marketing_campaign like 'es_%' THEN 'Spain'
+             WHEN a.marketing_campaign like 'us_%' THEN 'United States'
+             ELSE a.store_country
+            end as country_name,
+        c.marketing_source,
+        SUM(b.plan_duration * b.price)::DOUBLE PRECISION AS order_value --commited_subs_value
+    FROM master."order" a
+             LEFT JOIN ods_production.order_item b USING (order_id)
+             LEFT JOIN ods_production.order_marketing_channel c USING(order_id)
+    WHERE a.paid_orders >= 1
+      AND a.submitted_date::DATE >= CURRENT_DATE - 30
+      AND b.plan_duration IS NOT NULL
+      AND b.price IS NOT NULL
+      AND a.marketing_channel in (
+                                  'Display Branding',
+                                  'Display Performance',
+                                  'Paid Search Brand',
+                                  'Paid Search Non Brand'
+        )
+      AND c.marketing_source not in ('bing','criteo')
+    GROUP BY 1,2,3,4,5),
+
+     customers_per_order AS (
+         SELECT distinct
+             a.order_id,
+             a.session_id,
+             b.submitted_date,
+             b.order_value,
+             b.country_name
+         FROM traffic.session_order_mapping a
+                  INNER JOIN submitted_orders b ON a.order_id = b.order_id
+             AND a.session_start BETWEEN date_add('day', -30,  b.submitted_date::DATE) AND b.submitted_date
+     ),
+
+     get_gclid AS (
+         SELECT DISTINCT
+             session_id,
+             marketing_click_id AS gclid,
+             page_view_start AS click_time
+         FROM traffic.page_views
+         WHERE page_view_start::DATE >= CURRENT_DATE - 90
+           AND marketing_click_id IS NOT NULL
+           AND (marketing_medium = 'display'
+             OR marketing_source = 'google')
+           AND marketing_source NOT IN ('bing','criteo')
+     ),
+
+     last_touch_gclid AS (
+         SELECT DISTINCT
+             b.gclid AS "google click id",
+             a.order_id,
+             b.click_time,
+             CASE
+                 WHEN a.country_name = 'Spain'
+                     THEN 'B2C ES Order Paid'
+                 WHEN a.country_name = 'Germany'
+                     THEN 'B2C DE Order Paid'
+                 WHEN a.country_name = 'Netherlands'
+                     THEN 'B2C NL Order Paid'
+                 WHEN a.country_name = 'Austria'
+                     THEN 'B2C AT Order Paid'
+                 END AS "conversion name",
+             row_number() over(partition by order_id order by b.click_time desc) AS rn,
+             CAST(date_add('hour',6,submitted_date::timestamp) AS VARCHAR) + CASE
+                                                                                 WHEN a.country_name = 'Spain'
+                                                                                     THEN ' Europe/Madrid'
+                                                                                 WHEN a.country_name = 'Germany'
+                                                                                     THEN ' Europe/Berlin'
+                                                                                 WHEN a.country_name = 'Netherlands'
+                                                                                     THEN ' Europe/Amsterdam'
+                                                                                 WHEN a.country_name = 'Austria'
+                                                                                     THEN ' Europe/Vienna'
+                                                                                 ELSE ' Europe/Berlin'
+                 END AS "conversion time",
+             a.order_value AS "conversion value",
+             'EUR' AS "conversion currency"
+         FROM customers_per_order a
+                  LEFT JOIN get_gclid b ON a.session_id = b.session_id AND b.click_time BETWEEN DATE_ADD('day', -30,  a.submitted_date::DATE) AND a.submitted_date
+         WHERE b.gclid is not null
+     )
+
+SELECT
+    "google click id",
+    "conversion name",
+    "conversion time",
+    "conversion value",
+    "conversion currency"
+FROM last_touch_gclid
+WHERE rn = 1;

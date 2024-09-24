@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS stg_external_apis_dl.ups_us_quarantine_inventory;
