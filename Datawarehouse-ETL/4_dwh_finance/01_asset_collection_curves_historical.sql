@@ -1,0 +1,67 @@
+DELETE FROM dm_finance.asset_collection_curves_historical
+WHERE reporting_date = CURRENT_DATE
+  OR (reporting_date = CURRENT_DATE - 1 AND reporting_date <> LAST_DAY(reporting_date));
+
+INSERT
+	INTO
+	dm_finance.asset_collection_curves_historical
+SELECT
+	CURRENT_DATE AS "reporting_date",
+	asset_id,
+	cohort_month,
+	shifted_creation_cohort,
+	datum_month,
+	customer_type,
+	new_recurring_mitja,
+	months_on_book,
+	months_since_shifted_creation_cohort,
+	performing,
+	performing_soft_default,
+	performing_hard_default,
+	performing_360_default,
+	performing_720_default,
+	delinquency_new,
+	soft_default_new,
+	hard_default_new,
+	hard_360_default_new,
+	hard_720_default_new,
+	curing_new,
+	curing_new_soft_default,
+	curing_new_hard_default,
+	curing_new_360_default,
+	curing_new_720_default,
+	sold,
+	lost,
+	initial_price,
+	market_valuation,
+	repair_cost_paid,
+	subscription_revenue_paid,
+	shipment_cost_paid,
+	customer_bought_paid,
+	additional_charge_paid,
+	debt_collection_paid,
+	chargeback_paid,
+	refunds_paid,
+	net_amount_paid,
+	cumuative_amount_paid,
+	capital_source_name,
+	warehouse,
+	first_allocation_store,
+	category_name,
+	subcategory_name,
+	brand,
+	product_sku,
+	variant_sku,
+	asset_status_new,
+	country,
+	asset_status_original,
+	days_utilized,
+	is_utilized,
+	allocated_assets,
+	allocated_sub_value,
+	allocated_purchase_price,
+	last_allocation_dpd,
+	sold_status
+FROM
+	dwh.asset_collection_curves
+;

@@ -1,0 +1,3118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="Redshift" id="Project_1514" database="Redshift" >
+	<schema name="atomic" catalogname="dev" >
+		<table name="com_google_analytics_cookies_1" >
+			<column name="schema_vendor" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="schema_name" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="schema_format" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="schema_version" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="root_id" type="char" length="36" decimal="0" jt="1" mandatory="y" />
+			<column name="root_tstamp" type="timestamp" length="29" decimal="6" jt="93" mandatory="y" />
+			<column name="ref_tree" type="varchar" length="1500" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="ref_parent" type="varchar" length="255" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="__utma" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode text32k</column_extra>
+			</column>
+			<column name="__utmb" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode text32k</column_extra>
+			</column>
+			<column name="__utmc" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode text32k</column_extra>
+			</column>
+			<column name="__utmv" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode text32k</column_extra>
+			</column>
+			<column name="__utmz" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode text32k</column_extra>
+			</column>
+			<column name="ref_root" type="varchar" length="255" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="_ga" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode text32k</column_extra>
+			</column>
+			<index name="Distribution" unique="CUSTOM1" >
+				<column name="root_id" />
+			</index>
+			<index name="Sorting" unique="CUSTOM2" options="COMPOUND" >
+				<column name="root_tstamp" />
+			</index>
+			<fk name="com_google_analytics_cookies_1_root_id_fkey" to_schema="dev.atomic" to_table="events" >
+				<fk_column name="root_id" pk="event_id" />
+			</fk>
+		</table>
+		<table name="com_google_analytics_enhanced_ecommerce_action_1" >
+			<comment><![CDATA[iglu:com.google.analytics.enhanced-ecommerce/action/jsonschema/1-0-0]]></comment>
+			<column name="schema_vendor" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="schema_name" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="schema_format" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="schema_version" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="root_id" type="char" length="36" decimal="0" jt="1" mandatory="y" />
+			<column name="root_tstamp" type="timestamp" length="29" decimal="6" jt="93" mandatory="y" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="ref_root" type="varchar" length="255" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="ref_tree" type="varchar" length="1500" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="ref_parent" type="varchar" length="255" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="action" type="varchar" length="15" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<index name="Distribution" unique="CUSTOM1" >
+				<column name="root_id" />
+			</index>
+			<index name="Sorting" unique="CUSTOM2" options="COMPOUND" >
+				<column name="root_tstamp" />
+			</index>
+			<fk name="com_google_analytics_enhanced_ecommerce_action_1_root_id_fkey" to_schema="dev.atomic" to_table="events" >
+				<fk_column name="root_id" pk="event_id" />
+			</fk>
+		</table>
+		<table name="com_google_analytics_enhanced_ecommerce_action_field_object_1" >
+			<comment><![CDATA[iglu:com.google.analytics.enhanced-ecommerce/actionFieldObject/jsonschema/1-0-0]]></comment>
+			<column name="schema_vendor" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="schema_name" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="schema_format" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="schema_version" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="root_id" type="char" length="36" decimal="0" jt="1" mandatory="y" />
+			<column name="root_tstamp" type="timestamp" length="29" decimal="6" jt="93" mandatory="y" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="ref_root" type="varchar" length="255" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="ref_tree" type="varchar" length="1500" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="ref_parent" type="varchar" length="255" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="affiliation" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="coupon" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="currency" type="char" length="3" decimal="0" jt="1" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="id" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="list" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="option" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="revenue" type="double precision" length="17" decimal="17" jt="8" />
+			<column name="shipping" type="double precision" length="17" decimal="17" jt="8" />
+			<column name="step" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="tax" type="double precision" length="17" decimal="17" jt="8" />
+			<index name="Distribution" unique="CUSTOM1" >
+				<column name="root_id" />
+			</index>
+			<index name="Sorting" unique="CUSTOM2" options="COMPOUND" >
+				<column name="root_tstamp" />
+			</index>
+			<fk name="com_google_analytics_enhanced_ecommerce_action_field_object_1_root_id_fkey" to_schema="dev.atomic" to_table="events" >
+				<fk_column name="root_id" pk="event_id" />
+			</fk>
+		</table>
+		<table name="com_google_analytics_enhanced_ecommerce_impression_field_object_1" >
+			<comment><![CDATA[iglu:com.google.analytics.enhanced-ecommerce/impressionFieldObject/jsonschema/1-0-0]]></comment>
+			<column name="schema_vendor" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="schema_name" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="schema_format" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="schema_version" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="root_id" type="char" length="36" decimal="0" jt="1" mandatory="y" />
+			<column name="root_tstamp" type="timestamp" length="29" decimal="6" jt="93" mandatory="y" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="ref_root" type="varchar" length="255" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="ref_tree" type="varchar" length="1500" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="ref_parent" type="varchar" length="255" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="brand" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="category" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="currency" type="char" length="3" decimal="0" jt="1" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="id" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="list" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="name" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="position" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="price" type="double precision" length="17" decimal="17" jt="8" />
+			<column name="variant" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<index name="Distribution" unique="CUSTOM1" >
+				<column name="root_id" />
+			</index>
+			<index name="Sorting" unique="CUSTOM2" options="COMPOUND" >
+				<column name="root_tstamp" />
+			</index>
+			<fk name="com_google_analytics_enhanced_ecommerce_impression_field_object_1_root_id_fkey" to_schema="dev.atomic" to_table="events" >
+				<fk_column name="root_id" pk="event_id" />
+			</fk>
+		</table>
+		<table name="com_google_analytics_enhanced_ecommerce_product_field_object_1" >
+			<comment><![CDATA[iglu:com.google.analytics.enhanced-ecommerce/productFieldObject/jsonschema/1-0-0]]></comment>
+			<column name="schema_vendor" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="schema_name" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="schema_format" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="schema_version" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="root_id" type="char" length="36" decimal="0" jt="1" mandatory="y" />
+			<column name="root_tstamp" type="timestamp" length="29" decimal="6" jt="93" mandatory="y" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="ref_root" type="varchar" length="255" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="ref_tree" type="varchar" length="1500" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="ref_parent" type="varchar" length="255" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="brand" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="category" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="coupon" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="currency" type="char" length="3" decimal="0" jt="1" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="id" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="list" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="name" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="position" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="price" type="double precision" length="17" decimal="17" jt="8" />
+			<column name="quantity" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="variant" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<index name="Sorting" unique="CUSTOM2" options="COMPOUND" >
+				<column name="root_tstamp" />
+			</index>
+			<index name="Distribution" unique="UNIQUE" >
+				<column name="root_id" />
+			</index>
+			<fk name="com_google_analytics_enhanced_ecommerce_product_field_object_1_root_id_fkey" to_schema="dev.atomic" to_table="events" >
+				<fk_column name="root_id" pk="event_id" />
+			</fk>
+		</table>
+		<table name="com_google_analytics_enhanced_ecommerce_promo_field_object_1" >
+			<comment><![CDATA[iglu:com.google.analytics.enhanced-ecommerce/promoFieldObject/jsonschema/1-0-0]]></comment>
+			<column name="schema_vendor" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="schema_name" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="schema_format" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="schema_version" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="root_id" type="char" length="36" decimal="0" jt="1" mandatory="y" />
+			<column name="root_tstamp" type="timestamp" length="29" decimal="6" jt="93" mandatory="y" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="ref_root" type="varchar" length="255" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="ref_tree" type="varchar" length="1500" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="ref_parent" type="varchar" length="255" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="creative" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="currency" type="char" length="3" decimal="0" jt="1" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="id" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="name" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="position" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<index name="Distribution" unique="CUSTOM1" >
+				<column name="root_id" />
+			</index>
+			<index name="Sorting" unique="CUSTOM2" options="COMPOUND" >
+				<column name="root_tstamp" />
+			</index>
+			<fk name="com_google_analytics_enhanced_ecommerce_promo_field_object_1_root_id_fkey" to_schema="dev.atomic" to_table="events" >
+				<fk_column name="root_id" pk="event_id" />
+			</fk>
+		</table>
+		<table name="com_snowplowanalytics_snowplow_duplicate_1" >
+			<comment><![CDATA[iglu:com.snowplowanalytics.snowplow/duplicate/jsonschema/1-0-0]]></comment>
+			<column name="schema_vendor" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="schema_name" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="schema_format" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="schema_version" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="root_id" type="char" length="36" decimal="0" jt="1" mandatory="y" />
+			<column name="root_tstamp" type="timestamp" length="29" decimal="6" jt="93" mandatory="y" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="ref_root" type="varchar" length="255" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="ref_tree" type="varchar" length="1500" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="ref_parent" type="varchar" length="255" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="original_event_id" type="char" length="36" decimal="0" jt="1" mandatory="y" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<index name="Distribution" unique="CUSTOM1" >
+				<column name="root_id" />
+			</index>
+			<index name="Sorting" unique="CUSTOM2" options="COMPOUND" >
+				<column name="root_tstamp" />
+			</index>
+			<fk name="com_snowplowanalytics_snowplow_duplicate_1_root_id_fkey" to_schema="dev.atomic" to_table="events" >
+				<fk_column name="root_id" pk="event_id" />
+			</fk>
+		</table>
+		<table name="com_snowplowanalytics_snowplow_mobile_context_1" >
+			<column name="schema_vendor" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="schema_name" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="schema_format" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="schema_version" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="root_id" type="char" length="36" decimal="0" jt="1" mandatory="y" />
+			<column name="root_tstamp" type="timestamp" length="29" decimal="6" jt="93" mandatory="y" />
+			<column name="ref_root" type="varchar" length="255" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="ref_tree" type="varchar" length="1500" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="ref_parent" type="varchar" length="255" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="os_type" type="varchar" length="255" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode text255</column_extra>
+			</column>
+			<column name="os_version" type="varchar" length="255" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode text32k</column_extra>
+			</column>
+			<column name="device_manufacturer" type="varchar" length="255" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode text255</column_extra>
+			</column>
+			<column name="device_model" type="varchar" length="255" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode text32k</column_extra>
+			</column>
+			<column name="carrier" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode text32k</column_extra>
+			</column>
+			<column name="open_idfa" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="apple_idfa" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="apple_idfv" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="android_idfa" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<index name="Distribution" unique="CUSTOM1" >
+				<column name="root_id" />
+			</index>
+			<index name="Sorting" unique="CUSTOM2" options="COMPOUND" >
+				<column name="root_tstamp" />
+			</index>
+			<fk name="com_snowplowanalytics_snowplow_mobile_context_1_root_id_fkey" to_schema="dev.atomic" to_table="events" >
+				<fk_column name="root_id" pk="event_id" />
+			</fk>
+		</table>
+		<table name="com_snowplowanalytics_snowplow_ua_parser_context_1" >
+			<column name="schema_vendor" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="schema_name" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="schema_format" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="schema_version" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="root_id" type="char" length="36" decimal="0" jt="1" mandatory="y" />
+			<column name="root_tstamp" type="timestamp" length="29" decimal="6" jt="93" mandatory="y" />
+			<column name="ref_root" type="varchar" length="255" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="ref_tree" type="varchar" length="1500" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="ref_parent" type="varchar" length="255" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="useragent_family" type="varchar" length="255" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode text255</column_extra>
+			</column>
+			<column name="useragent_major" type="varchar" length="64" decimal="0" jt="12" >
+				<column_extra>encode text255</column_extra>
+			</column>
+			<column name="useragent_minor" type="varchar" length="64" decimal="0" jt="12" >
+				<column_extra>encode text255</column_extra>
+			</column>
+			<column name="useragent_patch" type="varchar" length="64" decimal="0" jt="12" >
+				<column_extra>encode text255</column_extra>
+			</column>
+			<column name="useragent_version" type="varchar" length="255" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode text32k</column_extra>
+			</column>
+			<column name="os_family" type="varchar" length="255" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode text255</column_extra>
+			</column>
+			<column name="os_major" type="varchar" length="64" decimal="0" jt="12" >
+				<column_extra>encode text255</column_extra>
+			</column>
+			<column name="os_minor" type="varchar" length="64" decimal="0" jt="12" >
+				<column_extra>encode text255</column_extra>
+			</column>
+			<column name="os_patch" type="varchar" length="64" decimal="0" jt="12" >
+				<column_extra>encode text255</column_extra>
+			</column>
+			<column name="os_patch_minor" type="varchar" length="64" decimal="0" jt="12" >
+				<column_extra>encode text255</column_extra>
+			</column>
+			<column name="os_version" type="varchar" length="255" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode text32k</column_extra>
+			</column>
+			<column name="device_family" type="varchar" length="255" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode text255</column_extra>
+			</column>
+			<index name="Distribution" unique="CUSTOM1" >
+				<column name="root_id" />
+			</index>
+			<index name="Sorting" unique="CUSTOM2" options="COMPOUND" >
+				<column name="root_tstamp" />
+			</index>
+			<fk name="com_snowplowanalytics_snowplow_ua_parser_context_1_root_id_fkey" to_schema="dev.atomic" to_table="events" >
+				<fk_column name="root_id" pk="event_id" />
+			</fk>
+		</table>
+		<table name="com_snowplowanalytics_snowplow_web_page_1" >
+			<column name="schema_vendor" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="schema_name" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="schema_format" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="schema_version" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="root_id" type="char" length="36" decimal="0" jt="1" mandatory="y" />
+			<column name="root_tstamp" type="timestamp" length="29" decimal="6" jt="93" mandatory="y" />
+			<column name="ref_root" type="varchar" length="255" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="ref_tree" type="varchar" length="1500" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="ref_parent" type="varchar" length="255" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode runlength</column_extra>
+			</column>
+			<column name="id" type="char" length="36" decimal="0" jt="1" mandatory="y" />
+			<index name="Distribution" unique="CUSTOM1" >
+				<column name="root_id" />
+			</index>
+			<index name="Sorting" unique="CUSTOM2" options="COMPOUND" >
+				<column name="root_tstamp" />
+			</index>
+			<fk name="com_snowplowanalytics_snowplow_web_page_1_root_id_fkey" to_schema="dev.atomic" to_table="events" >
+				<fk_column name="root_id" pk="event_id" />
+			</fk>
+		</table>
+		<table name="event_id_0100_pk" >
+			<column name="event_id" type="char" length="36" decimal="0" jt="1" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<index name="Distribution" unique="CUSTOM1" >
+				<column name="event_id" />
+			</index>
+		</table>
+		<table name="events" >
+			<comment><![CDATA[0.10.0]]></comment>
+			<column name="event_id" type="char" length="36" decimal="0" jt="1" mandatory="y" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="app_id" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="platform" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="etl_tstamp" type="timestamp" length="29" decimal="6" jt="93" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="collector_tstamp" type="timestamp" length="29" decimal="6" jt="93" mandatory="y" />
+			<column name="dvce_created_tstamp" type="timestamp" length="29" decimal="6" jt="93" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="event" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="txn_id" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="name_tracker" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="v_tracker" type="varchar" length="100" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="v_collector" type="varchar" length="100" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="v_etl" type="varchar" length="100" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="user_id" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="user_ipaddress" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="user_fingerprint" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="domain_userid" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="domain_sessionidx" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="network_userid" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="geo_country" type="char" length="2" decimal="0" jt="1" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="geo_region" type="char" length="2" decimal="0" jt="1" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="geo_city" type="varchar" length="75" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="geo_zipcode" type="varchar" length="15" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="geo_latitude" type="double precision" length="17" decimal="17" jt="8" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="geo_longitude" type="double precision" length="17" decimal="17" jt="8" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="geo_region_name" type="varchar" length="100" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="ip_isp" type="varchar" length="100" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="ip_organization" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="ip_domain" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="ip_netspeed" type="varchar" length="100" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="page_url" type="varchar" length="4096" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="page_title" type="varchar" length="2000" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="page_referrer" type="varchar" length="4096" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="page_urlscheme" type="varchar" length="16" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="page_urlhost" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="page_urlport" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="page_urlpath" type="varchar" length="3000" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="page_urlquery" type="varchar" length="6000" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="page_urlfragment" type="varchar" length="3000" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="refr_urlscheme" type="varchar" length="16" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="refr_urlhost" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="refr_urlport" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="refr_urlpath" type="varchar" length="6000" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="refr_urlquery" type="varchar" length="6000" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="refr_urlfragment" type="varchar" length="3000" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="refr_medium" type="varchar" length="25" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="refr_source" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="refr_term" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="mkt_medium" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="mkt_source" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="mkt_term" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="mkt_content" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="mkt_campaign" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="se_category" type="varchar" length="1000" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="se_action" type="varchar" length="1000" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="se_label" type="varchar" length="4096" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="se_property" type="varchar" length="1000" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="se_value" type="double precision" length="17" decimal="17" jt="8" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="tr_orderid" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="tr_affiliation" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="tr_total" type="decimal" length="18" decimal="2" jt="3" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="tr_tax" type="decimal" length="18" decimal="2" jt="3" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="tr_shipping" type="decimal" length="18" decimal="2" jt="3" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="tr_city" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="tr_state" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="tr_country" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="ti_orderid" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="ti_sku" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="ti_name" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="ti_category" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="ti_price" type="decimal" length="18" decimal="2" jt="3" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="ti_quantity" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="pp_xoffset_min" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="pp_xoffset_max" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="pp_yoffset_min" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="pp_yoffset_max" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="useragent" type="varchar" length="1000" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="br_name" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="br_family" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="br_version" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="br_type" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="br_renderengine" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="br_lang" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="br_features_pdf" type="bool" length="1" decimal="0" jt="-7" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="br_features_flash" type="bool" length="1" decimal="0" jt="-7" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="br_features_java" type="bool" length="1" decimal="0" jt="-7" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="br_features_director" type="bool" length="1" decimal="0" jt="-7" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="br_features_quicktime" type="bool" length="1" decimal="0" jt="-7" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="br_features_realplayer" type="bool" length="1" decimal="0" jt="-7" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="br_features_windowsmedia" type="bool" length="1" decimal="0" jt="-7" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="br_features_gears" type="bool" length="1" decimal="0" jt="-7" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="br_features_silverlight" type="bool" length="1" decimal="0" jt="-7" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="br_cookies" type="bool" length="1" decimal="0" jt="-7" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="br_colordepth" type="varchar" length="12" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="br_viewwidth" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="br_viewheight" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="os_name" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="os_family" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="os_manufacturer" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="os_timezone" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="dvce_type" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="dvce_ismobile" type="bool" length="1" decimal="0" jt="-7" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="dvce_screenwidth" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="dvce_screenheight" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="doc_charset" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="doc_width" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="doc_height" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="tr_currency" type="char" length="3" decimal="0" jt="1" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="tr_total_base" type="decimal" length="18" decimal="2" jt="3" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="tr_tax_base" type="decimal" length="18" decimal="2" jt="3" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="tr_shipping_base" type="decimal" length="18" decimal="2" jt="3" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="ti_currency" type="char" length="3" decimal="0" jt="1" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="ti_price_base" type="decimal" length="18" decimal="2" jt="3" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="base_currency" type="char" length="3" decimal="0" jt="1" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="geo_timezone" type="varchar" length="64" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="mkt_clickid" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="mkt_network" type="varchar" length="64" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="etl_tags" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="dvce_sent_tstamp" type="timestamp" length="29" decimal="6" jt="93" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="refr_domain_userid" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="refr_dvce_tstamp" type="timestamp" length="29" decimal="6" jt="93" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="domain_sessionid" type="char" length="128" decimal="0" jt="1" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="derived_tstamp" type="timestamp" length="29" decimal="6" jt="93" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="event_vendor" type="varchar" length="1000" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="event_name" type="varchar" length="1000" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="event_format" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="event_version" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="event_fingerprint" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="true_tstamp" type="timestamp" length="29" decimal="6" jt="93" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<index name="Sorting" unique="CUSTOM2" options="COMPOUND" >
+				<column name="collector_tstamp" />
+			</index>
+			<index name="event_id_0100_pk" unique="PRIMARY_KEY" >
+				<column name="event_id" />
+			</index>
+			<index name="unq_events_user_id" unique="UNIQUE" >
+				<column name="user_id" />
+			</index>
+			<index name="unq_events_domain_userid" unique="UNIQUE" >
+				<column name="domain_userid" />
+			</index>
+			<index name="Distribution" unique="UNIQUE" >
+				<column name="event_id" />
+			</index>
+			<index name="unq_events_domain_sessionidx" unique="UNIQUE" >
+				<column name="domain_sessionidx" />
+			</index>
+			<fk name="fk_events_web_page_context" to_schema="dev.scratch" to_table="web_page_context" >
+				<fk_column name="event_id" pk="root_id" />
+			</fk>
+		</table>
+		<table name="manifest" >
+			<comment><![CDATA[0.1.0]]></comment>
+			<column name="etl_tstamp" type="timestamp" length="29" decimal="6" jt="93" />
+			<column name="commit_tstamp" type="timestamp" length="29" decimal="6" jt="93" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="event_count" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="shredded_cardinality" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<index name="Sorting" unique="CUSTOM2" options="COMPOUND" >
+				<column name="etl_tstamp" />
+			</index>
+		</table>
+		<table name="mat_git_dwh_scripts" >
+			<column name="table_name" type="varchar" length="65535" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+		</table>
+		<table name="org_w3_performance_timing_1" >
+			<column name="schema_vendor" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="schema_name" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="schema_format" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="schema_version" type="varchar" length="128" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="root_id" type="char" length="36" decimal="0" jt="1" mandatory="y" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="root_tstamp" type="timestamp" length="29" decimal="6" jt="93" mandatory="y" />
+			<column name="ref_root" type="varchar" length="255" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="ref_tree" type="varchar" length="1500" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="ref_parent" type="varchar" length="255" decimal="0" jt="12" mandatory="y" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="navigation_start" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="redirect_start" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="redirect_end" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="fetch_start" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="domain_lookup_start" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="domain_lookup_end" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="secure_connection_start" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="connect_start" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="connect_end" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="request_start" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="response_start" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="response_end" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="unload_event_start" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="unload_event_end" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="dom_loading" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="dom_interactive" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="dom_content_loaded_event_start" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="dom_content_loaded_event_end" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="dom_complete" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="load_event_start" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="load_event_end" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="ms_first_paint" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<column name="chrome_first_paint" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode zstd</column_extra>
+			</column>
+			<index name="Distribution" unique="CUSTOM1" >
+				<column name="root_id" />
+			</index>
+			<index name="Sorting" unique="CUSTOM2" options="COMPOUND" >
+				<column name="root_tstamp" />
+			</index>
+			<fk name="org_w3_performance_timing_1_root_id_fkey" to_schema="dev.atomic" to_table="events" >
+				<fk_column name="root_id" pk="event_id" />
+			</fk>
+		</table>
+		<procedure name="f_json_ok" id="Procedure_15d7" isSystem="false" params_known="n" >
+			<string><![CDATA[CREATE OR REPLACE FUNCTION atomic.f_json_ok(js character varying(65535))
+ RETURNS boolean LANGUAGE plpythonu
+ IMMUTABLE
+AS $$
+    if js is None: 
+        return None
+    import json
+    try:
+        json.loads(js)
+        return True
+    except:
+        return False
+$$
+;]]></string>
+		</procedure>
+		<procedure name="simple_loop" id="Procedure_7c1" isSystem="false" params_known="n" >
+			<string><![CDATA[CREATE OR REPLACE PROCEDURE atomic.simple_loop()
+ LANGUAGE plpgsql
+AS $$
+BEGIN
+  <<simple_while>>
+  LOOP
+    RAISE INFO 'I am raised once';  
+    EXIT simple_while;
+    RAISE INFO 'I am not raised';
+  END LOOP;
+  RAISE INFO 'I am raised once as well';
+END;
+$$
+;]]></string>
+		</procedure>
+		<procedure name="simple_loop_when" id="Procedure_26ee" isSystem="false" params_known="n" >
+			<string><![CDATA[CREATE OR REPLACE PROCEDURE atomic.simple_loop_when(x integer)
+ LANGUAGE plpgsql
+AS $$
+DECLARE i INTEGER := 0;
+BEGIN
+  <<simple_loop_when>>
+  LOOP
+    RAISE INFO 'i %', i;
+    i := i + 1;
+    EXIT simple_loop_when WHEN (i >= x);
+  END LOOP;
+END;
+$$
+;]]></string>
+		</procedure>
+		<procedure name="test" id="Procedure_4cf" isSystem="false" params_known="n" >
+			<string><![CDATA[CREATE OR REPLACE PROCEDURE atomic.test(f1 integer, INOUT f2 character varying(256), OUT out_var character varying(256))
+ LANGUAGE plpgsql
+AS $$
+DECLARE
+  loop_var integer;
+  abc varchar(max);
+BEGIN
+  IF f1 is null OR f2 is null THEN
+    RAISE EXCEPTION 'input cannot be null';
+  END IF;
+  DROP TABLE if exists my_etl;
+  CREATE TEMP TABLE my_etl(a int, b varchar(max));
+    FOR loop_var IN 0..f1 LOOP
+        insert into my_etl
+        select 1,json_extract_path_text(
+	   json_extract_array_element_text(json_extract_path_text(shipment, 'packages'), 1),'tracking_events')from stg_salesforce.sf_ops_asset_delivery where delivered_at is not null and  id = 827;
+    END LOOP;
+  SELECT INTO out_var count(*) from my_etl;
+END;
+$$
+;]]></string>
+		</procedure>
+		<procedure name="test_sp" id="Procedure_1ddf" isSystem="false" params_known="n" >
+			<string><![CDATA[CREATE OR REPLACE PROCEDURE atomic.test_sp(f1 integer, f2 character varying(65535))
+ LANGUAGE plpgsql
+AS $$
+DECLARE
+  loop_var int;
+BEGIN
+    FOR loop_var IN 1..f1 LOOP
+    	insert into my_etl values ('hello');
+        select top 10 * from master.customer;
+    END LOOP;
+   select * from my_etl;
+END;
+$$
+;]]></string>
+		</procedure>
+		<procedure name="test_sp2" id="Procedure_1718" isSystem="false" params_known="n" >
+			<string><![CDATA[CREATE OR REPLACE PROCEDURE atomic.test_sp2(f1 integer, INOUT f2 character varying(65535), OUT out_var character varying(65535))
+ LANGUAGE plpgsql
+AS $$
+DECLARE
+  loop_var int;
+BEGIN
+    FOR loop_var IN 1..f1 LOOP
+        insert into my_etl values (f1,json_extract_path_text(
+	   json_extract_array_element_text(json_extract_path_text(shipment, 'packages'), 0),'tracking_events'));
+    END LOOP;
+  SELECT INTO out_var count(*) from my_etl;
+END;
+$$
+;]]></string>
+		</procedure>
+		<procedure name="test_sp3" id="Procedure_186c" isSystem="false" params_known="n" >
+			<string><![CDATA[CREATE OR REPLACE PROCEDURE atomic.test_sp3(f1 integer, f2 character varying(65535), OUT out_var character varying(256))
+ LANGUAGE plpgsql
+AS $$
+DECLARE
+  loop_var int;
+BEGIN
+    FOR loop_var IN 1..f1 LOOP
+    	insert into my_etl values ('hello');
+        select top 10 * from master.customer;
+    END LOOP;
+   select into out_var count(*) from my_etl;
+END;
+$$
+;]]></string>
+		</procedure>
+	</schema>
+	<schema name="scratch" catalogname="dev" >
+		<table name="customer_mapping" >
+			<column name="domain_userid" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="page_view_id" type="varchar" length="36" decimal="0" jt="12" />
+			<column name="min_tstamp" type="timestamp" length="29" decimal="6" jt="93" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="user_registration_date" type="timestamp" length="29" decimal="6" jt="93" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="acquisition_date" type="timestamp" length="29" decimal="6" jt="93" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="customer_id" type="varchar" length="11" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="customer_id_mapped" type="varchar" length="11" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<index name="Sorting" unique="CUSTOM2" options="COMPOUND" >
+				<column name="page_view_id" />
+			</index>
+			<fk name="fk_customer_mapping_user_encoded_ids" to_schema="dev.scratch" to_table="user_encoded_ids" >
+				<fk_column name="customer_id" pk="customer_id" />
+			</fk>
+			<fk name="fk_customer_mapping_web_events" to_schema="dev.scratch" to_table="web_events" >
+				<fk_column name="page_view_id" pk="page_view_id" />
+			</fk>
+		</table>
+		<table name="non_registered_users" >
+			<column name="domain_userid" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="user_ids" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<index name="Distribution" unique="CUSTOM1" >
+				<column name="domain_userid" />
+			</index>
+			<index name="idx_non_registered_users_user_ids" unique="CUSTOM1" >
+				<column name="user_ids" />
+			</index>
+			<index name="idx_non_registered_users_domain_userid" unique="NORMAL" >
+				<column name="domain_userid" />
+			</index>
+			<fk name="fk_non_registered_users_events" to_schema="dev.atomic" to_table="events" >
+				<fk_column name="user_ids" pk="user_id" />
+			</fk>
+		</table>
+		<table name="registered_users" >
+			<column name="domain_userid" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="user_ids" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<index name="Distribution" unique="CUSTOM1" >
+				<column name="domain_userid" />
+			</index>
+			<index name="idx_registered_users_user_ids" unique="CUSTOM1" >
+				<column name="user_ids" />
+			</index>
+			<index name="idx_registered_users_domain_userid" unique="NORMAL" >
+				<column name="domain_userid" />
+			</index>
+			<fk name="fk_registered_users_events" to_schema="dev.atomic" to_table="events" >
+				<fk_column name="user_ids" pk="user_id" />
+			</fk>
+		</table>
+		<table name="session_order_event_mapping" >
+			<column name="session_id" type="char" length="128" decimal="0" jt="1" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="order_id" type="varchar" length="44" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="event_count" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<fk name="fk_session_order_event_mapping" to_schema="dev.atomic" to_table="events" >
+				<fk_column name="session_id" pk="domain_sessionidx" />
+			</fk>
+		</table>
+		<table name="session_order_sp_user_mapping" >
+			<column name="session_id" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="order_id" type="varchar" length="64" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<index name="unq_session_order_sp_user_mapping_order_id" unique="UNIQUE" >
+				<column name="order_id" />
+			</index>
+			<fk name="fk_session_order_sp_user_mapping_page_views" to_schema="dev.web" to_table="page_views" >
+				<fk_column name="session_id" pk="session_id" />
+			</fk>
+		</table>
+		<table name="session_order_url_mapping" >
+			<column name="session_id" type="char" length="128" decimal="0" jt="1" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="order_id" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<fk name="fk_session_order_url_mapping" to_schema="dev.atomic" to_table="events" >
+				<fk_column name="session_id" pk="domain_sessionidx" />
+			</fk>
+		</table>
+		<table name="user_encoded_ids" >
+			<column name="created_at" type="timestamp" length="29" decimal="6" jt="93" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="customer_id" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="encoded_id" type="varchar" length="40" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<index name="unq_user_encoded_ids_customer_id" unique="UNIQUE" >
+				<column name="customer_id" />
+			</index>
+		</table>
+		<table name="web_events" >
+			<column name="user_id" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="domain_userid" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="network_userid" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="domain_sessionid" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="domain_sessionidx" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="root_id" type="char" length="36" decimal="0" jt="1" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="page_view_id" type="varchar" length="36" decimal="0" jt="12" />
+			<column name="page_title" type="varchar" length="2000" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="page_url" type="varchar" length="3255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="page_urlscheme" type="varchar" length="16" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="page_urlhost" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="page_urlport" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="page_urlpath" type="varchar" length="3000" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="page_urlquery" type="varchar" length="6000" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="page_urlfragment" type="varchar" length="3000" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="refr_urlscheme" type="varchar" length="16" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="refr_urlhost" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="refr_urlport" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="refr_urlpath" type="varchar" length="6000" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="refr_urlquery" type="varchar" length="6000" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="refr_urlfragment" type="varchar" length="3000" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="refr_medium" type="varchar" length="25" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="refr_source" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="refr_term" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="mkt_medium" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="mkt_source" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="mkt_term" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="mkt_content" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="mkt_campaign" type="varchar" length="6000" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="mkt_clickid" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="mkt_network" type="varchar" length="64" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="geo_country" type="char" length="2" decimal="0" jt="1" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="geo_region" type="char" length="2" decimal="0" jt="1" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="geo_region_name" type="varchar" length="100" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="geo_city" type="varchar" length="75" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="geo_zipcode" type="varchar" length="15" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="geo_latitude" type="double precision" length="17" decimal="17" jt="8" />
+			<column name="geo_longitude" type="double precision" length="17" decimal="17" jt="8" />
+			<column name="geo_timezone" type="varchar" length="64" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="user_ipaddress" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="ip_isp" type="varchar" length="100" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="ip_organization" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="ip_domain" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="ip_netspeed" type="varchar" length="100" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="app_id" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="useragent" type="varchar" length="1000" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="br_name" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="br_family" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="br_version" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="br_type" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="br_renderengine" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="br_lang" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="platform" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="dvce_type" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="dvce_ismobile" type="bool" length="1" decimal="0" jt="-7" />
+			<column name="os_name" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="os_family" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="os_manufacturer" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="os_timezone" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="name_tracker" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="etl_tstamp" type="timestamp" length="29" decimal="6" jt="93" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="dvce_created_tstamp" type="timestamp" length="29" decimal="6" jt="93" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="n" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<index name="Sorting" unique="CUSTOM2" options="COMPOUND" >
+				<column name="page_view_id" />
+			</index>
+			<index name="unq_web_events_root_id" unique="UNIQUE" >
+				<column name="root_id" />
+			</index>
+			<index name="Distribution" unique="UNIQUE" >
+				<column name="page_view_id" />
+			</index>
+			<index name="idx_web_events_page_view_id" unique="CUSTOM1" >
+				<column name="page_view_id" />
+			</index>
+			<fk name="fk_web_events_web_page_context" to_schema="dev.scratch" to_table="web_page_context" >
+				<fk_column name="root_id" pk="root_id" />
+			</fk>
+		</table>
+		<table name="web_events_scroll_depth" >
+			<column name="page_view_id" type="varchar" length="36" decimal="0" jt="12" />
+			<column name="doc_width" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="doc_height" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="br_viewwidth" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="br_viewheight" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="hmin" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="hmax" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="vmin" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="vmax" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="relative_hmin" type="double precision" length="17" decimal="17" jt="8" />
+			<column name="relative_hmax" type="double precision" length="17" decimal="17" jt="8" />
+			<column name="relative_vmin" type="double precision" length="17" decimal="17" jt="8" />
+			<column name="relative_vmax" type="double precision" length="17" decimal="17" jt="8" />
+			<index name="Distribution" unique="CUSTOM1" >
+				<column name="page_view_id" />
+			</index>
+			<index name="Sorting" unique="UNIQUE" >
+				<column name="page_view_id" />
+			</index>
+			<fk name="fk_web_events_scroll_depth_web_page_context" to_schema="dev.scratch" to_table="web_page_context" >
+				<fk_column name="page_view_id" pk="page_view_id" />
+			</fk>
+		</table>
+		<table name="web_events_time" >
+			<column name="page_view_id" type="varchar" length="36" decimal="0" jt="12" />
+			<column name="min_tstamp" type="timestamp" length="29" decimal="6" jt="93" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="max_tstamp" type="timestamp" length="29" decimal="6" jt="93" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="pv_count" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="pp_count" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="time_engaged_in_s" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<index name="Distribution" unique="CUSTOM1" >
+				<column name="page_view_id" />
+			</index>
+			<index name="Sorting" unique="UNIQUE" >
+				<column name="page_view_id" />
+			</index>
+			<fk name="fk_web_events_time_web_page_context" to_schema="dev.scratch" to_table="web_page_context" >
+				<fk_column name="page_view_id" pk="page_view_id" />
+			</fk>
+		</table>
+		<table name="web_events_time_incremental" >
+			<column name="page_view_id" type="varchar" length="36" decimal="0" jt="12" />
+			<column name="min_tstamp" type="timestamp" length="29" decimal="6" jt="93" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="max_tstamp" type="timestamp" length="29" decimal="6" jt="93" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="pv_count" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="pp_count" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="time_engaged_in_s" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<index name="Sorting" unique="UNIQUE" >
+				<column name="page_view_id" />
+			</index>
+			<index name="Distribution" unique="UNIQUE" >
+				<column name="page_view_id" />
+			</index>
+			<fk name="fk_web_events_time_incremental_web_page_context" to_schema="dev.scratch" to_table="web_page_context" >
+				<fk_column name="page_view_id" pk="page_view_id" />
+			</fk>
+		</table>
+		<table name="web_page_context" >
+			<column name="root_id" type="char" length="36" decimal="0" jt="1" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="page_view_id" type="char" length="36" decimal="0" jt="1" />
+			<index name="Distribution" unique="UNIQUE" >
+				<column name="page_view_id" />
+			</index>
+			<index name="unq_web_page_context_root_id" unique="UNIQUE" >
+				<column name="root_id" />
+			</index>
+			<index name="Sorting" unique="UNIQUE" >
+				<column name="page_view_id" />
+			</index>
+		</table>
+		<table name="web_timing_context" >
+			<column name="page_view_id" type="varchar" length="36" decimal="0" jt="12" />
+			<column name="redirect_time_in_ms" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="unload_time_in_ms" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="app_cache_time_in_ms" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="dns_time_in_ms" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="tcp_time_in_ms" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="request_time_in_ms" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="response_time_in_ms" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="processing_time_in_ms" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="dom_loading_to_interactive_time_in_ms" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="dom_interactive_to_complete_time_in_ms" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="onload_time_in_ms" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="total_time_in_ms" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<index name="Sorting" unique="CUSTOM2" options="COMPOUND" >
+				<column name="page_view_id" />
+			</index>
+			<index name="Distribution" unique="UNIQUE" >
+				<column name="page_view_id" />
+			</index>
+			<fk name="fk_web_timing_context_web_page_context" to_schema="dev.scratch" to_table="web_page_context" >
+				<fk_column name="page_view_id" pk="page_view_id" />
+			</fk>
+		</table>
+		<table name="web_ua_parser_context" >
+			<column name="page_view_id" type="varchar" length="36" decimal="0" jt="12" />
+			<column name="useragent_family" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="useragent_major" type="varchar" length="64" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="useragent_minor" type="varchar" length="64" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="useragent_patch" type="varchar" length="64" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="useragent_version" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="os_family" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="os_major" type="varchar" length="64" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="os_minor" type="varchar" length="64" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="os_patch" type="varchar" length="64" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="os_patch_minor" type="varchar" length="64" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="os_version" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="device_family" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<index name="Distribution" unique="CUSTOM1" >
+				<column name="page_view_id" />
+			</index>
+			<index name="Sorting" unique="CUSTOM2" options="COMPOUND" >
+				<column name="page_view_id" />
+			</index>
+			<fk name="fk_web_ua_parser_context_web_page_context" to_schema="dev.scratch" to_table="web_page_context" >
+				<fk_column name="page_view_id" pk="page_view_id" />
+			</fk>
+		</table>
+	</schema>
+	<schema name="web" catalogname="dev" >
+		<table name="event_properties" >
+			<column name="event_id" type="varchar" length="36" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="se_category" type="varchar" length="1000" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="se_action" type="varchar" length="1000" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="se_label" type="varchar" length="4096" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="se_property" type="varchar" length="1000" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="session_id" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="order_id" type="varchar" length="44" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="customer_id" type="varchar" length="44" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="current_flow" type="varchar" length="666" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="search_term" type="varchar" length="666" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="product_sku" type="varchar" length="666" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="product_name" type="varchar" length="510" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="category_name" type="varchar" length="65535" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="brand" type="varchar" length="65535" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="subcategory_name" type="varchar" length="65535" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<index name="unq_event_properties_session_id" unique="UNIQUE" >
+				<column name="session_id" />
+			</index>
+			<fk name="fk_event_properties_events" to_schema="dev.atomic" to_table="events" >
+				<fk_column name="event_id" pk="event_id" />
+			</fk>
+		</table>
+		<table name="order_conversions" >
+			<column name="order_id" type="varchar" length="255" decimal="0" jt="12" />
+			<column name="mietkauf_tooltip_events" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="failed_delivery_tracking_events" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+				<comment><![CDATA[nn]]></comment>
+			</column>
+			<column name="min_session_start" type="timestamp" length="29" decimal="6" jt="93" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="search_enter_events" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="min_search_enter_timestamp" type="timestamp" length="29" decimal="6" jt="93" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="search_confirm_events" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="search_exit_events" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="touchpoints" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="first_touchpoint" type="varchar" length="14" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="last_touchpoint" type="varchar" length="14" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="last_touchpoint_excl_direct" type="varchar" length="14" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="first_touchpoint_mkt_source" type="varchar" length="382" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="last_touchpoint_mkt_source" type="varchar" length="382" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="last_touchpoint_excl_direct_mkt_source" type="varchar" length="382" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="first_touchpoint_mkt_medium" type="varchar" length="382" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="last_touchpoint_mkt_medium" type="varchar" length="382" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="last_touchpoint_excl_direct_mkt_medium" type="varchar" length="382" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="os" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="browser" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="last_touchpoint_checkout_flow" type="varchar" length="65535" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="customer_journey" type="varchar" length="65535" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="unique_customer_journey" type="varchar" length="65535" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="customer_journey_checkout_flow" type="varchar" length="65535" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="last_touchpoint_device_type" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<index name="Sorting" unique="CUSTOM2" options="COMPOUND" >
+				<column name="order_id" />
+			</index>
+			<index name="Distribution" unique="UNIQUE" >
+				<column name="order_id" />
+			</index>
+			<fk name="fk_order_conversions_session_order_mapping" to_schema="dev.web" to_table="session_order_mapping" >
+				<fk_column name="order_id" pk="order_id" />
+			</fk>
+		</table>
+		<table name="order_info" >
+			<column name="schema_vendor" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="schema_name" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="schema_format" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="schema_version" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="root_id" type="char" length="36" decimal="0" jt="1" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="root_tstamp" type="timestamp" length="29" decimal="6" jt="93" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="ref_root" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="ref_tree" type="varchar" length="1500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="ref_parent" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="affiliation" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="coupon" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="currency" type="char" length="3" decimal="0" jt="1" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="id" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="list" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="option" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="revenue" type="double precision" length="17" decimal="17" jt="8" />
+			<column name="shipping" type="double precision" length="17" decimal="17" jt="8" />
+			<column name="step" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="tax" type="double precision" length="17" decimal="17" jt="8" />
+			<column name="action" type="varchar" length="15" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="user_id" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="domain_userid" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="domain_sessionid" type="char" length="128" decimal="0" jt="1" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="domain_sessionidx" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="mkt_campaign" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="mkt_clickid" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="mkt_content" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="mkt_medium" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="mkt_network" type="varchar" length="64" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="mkt_source" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="mkt_term" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="geo_city" type="varchar" length="75" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="geo_country" type="char" length="2" decimal="0" jt="1" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="geo_region" type="char" length="2" decimal="0" jt="1" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="geo_region_name" type="varchar" length="100" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="os_family" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="os_name" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="page_url" type="varchar" length="4096" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<index name="Distribution" unique="CUSTOM1" >
+				<column name="root_id" />
+			</index>
+			<fk name="fk_order_info_com_google_analytics_enhanced_ecommerce_product_field_object_1" to_schema="dev.atomic" to_table="com_google_analytics_enhanced_ecommerce_product_field_object_1" >
+				<fk_column name="root_id" pk="root_id" />
+			</fk>
+			<fk name="fk_order_info_events" to_schema="dev.atomic" to_table="events" >
+				<fk_column name="domain_userid" pk="domain_userid" />
+			</fk>
+		</table>
+		<table name="page_views" >
+			<column name="root_id" type="varchar" length="36" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="snowplow_user_id" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="encoded_customer_id" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="customer_id" type="varchar" length="11" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="user_registration_date" type="timestamp" length="29" decimal="6" jt="93" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="customer_acquisition_date" type="timestamp" length="29" decimal="6" jt="93" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="customer_id_mapped" type="varchar" length="11" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="session_id" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="session_index" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="page_view_id" type="varchar" length="36" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="page_view_index" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="page_view_in_session_index" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="page_view_date" type="varchar" length="18" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="page_view_start" type="timestamp" length="29" decimal="6" jt="93" />
+			<column name="page_view_end" type="timestamp" length="29" decimal="6" jt="93" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="page_view_start_local" type="timestamp" length="29" decimal="6" jt="93" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="page_view_end_local" type="timestamp" length="29" decimal="6" jt="93" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="login_status" type="varchar" length="23" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="time_engaged_in_s" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="time_engaged_in_s_tier" type="varchar" length="11" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="vertical_pixels_scrolled" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="vertical_percentage_scrolled_tier" type="varchar" length="11" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="user_bounced" type="bool" length="1" decimal="0" jt="-7" />
+			<column name="user_engaged" type="bool" length="1" decimal="0" jt="-7" />
+			<column name="page_url" type="varchar" length="3255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="page_urlpath" type="varchar" length="3000" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="page_title" type="varchar" length="2000" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="page_type" type="varchar" length="3000" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="page_type_detail" type="varchar" length="65535" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="page_width" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="page_height" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="store_id" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="store_name" type="varchar" length="2510" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="store_label" type="varchar" length="28" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="referer_url" type="varchar" length="6255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="referer_url_host" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="referer_medium" type="varchar" length="25" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="referer_source" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="referer_term" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="marketing_medium" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="marketing_source" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="marketing_term" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="marketing_content" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="marketing_campaign" type="varchar" length="6000" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="marketing_click_id" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="marketing_network" type="varchar" length="64" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="geo_country" type="char" length="2" decimal="0" jt="1" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="geo_region_name" type="varchar" length="100" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="geo_city" type="varchar" length="75" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="geo_zipcode" type="varchar" length="15" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="geo_latitude" type="double precision" length="17" decimal="17" jt="8" />
+			<column name="geo_longitude" type="double precision" length="17" decimal="17" jt="8" />
+			<column name="geo_timezone" type="varchar" length="64" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="ip_address" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="ip_isp" type="varchar" length="100" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="ip_organization" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="ip_domain" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="ip_net_speed" type="varchar" length="100" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="browser" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="browser_family" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="browser_language" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="platform" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="os" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="os_family" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="os_timezone" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="device" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="device_type" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="device_is_mobile" type="bool" length="1" decimal="0" jt="-7" />
+			<column name="redirect_time_in_ms" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="unload_time_in_ms" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="app_cache_time_in_ms" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="dns_time_in_ms" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="tcp_time_in_ms" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="request_time_in_ms" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="response_time_in_ms" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="processing_time_in_ms" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="dom_loading_to_interactive_time_in_ms" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="dom_interactive_to_complete_time_in_ms" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="onload_time_in_ms" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="total_time_in_ms" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="marketing_channel" type="varchar" length="14" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="is_paid" type="bool" length="1" decimal="0" jt="-7" />
+			<index name="Sorting" unique="CUSTOM2" options="COMPOUND" >
+				<column name="page_view_start" />
+			</index>
+			<index name="unq_page_views_session_id" unique="UNIQUE" >
+				<column name="session_id" />
+			</index>
+			<index name="Distribution" unique="UNIQUE" >
+				<column name="snowplow_user_id" />
+			</index>
+			<fk name="fk_page_views_web_events" to_schema="dev.scratch" to_table="web_events" >
+				<fk_column name="root_id" pk="root_id" />
+			</fk>
+		</table>
+		<table name="product_info_from_pdp" >
+			<comment><![CDATA[Not used]]></comment>
+			<column name="schema_vendor" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="schema_name" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="schema_format" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="schema_version" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="root_id" type="char" length="36" decimal="0" jt="1" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="root_tstamp" type="timestamp" length="29" decimal="6" jt="93" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="ref_root" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="ref_tree" type="varchar" length="1500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="ref_parent" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="brand" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="category" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="coupon" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="currency" type="char" length="3" decimal="0" jt="1" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="id" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="list" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="name" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="position" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="price" type="double precision" length="17" decimal="17" jt="8" />
+			<column name="quantity" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="variant" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="action" type="varchar" length="15" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="user_id" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="domain_userid" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="domain_sessionid" type="char" length="128" decimal="0" jt="1" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="domain_sessionidx" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="mkt_campaign" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="mkt_clickid" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="mkt_content" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="mkt_medium" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="mkt_network" type="varchar" length="64" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="mkt_source" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="mkt_term" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="geo_city" type="varchar" length="75" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="geo_country" type="char" length="2" decimal="0" jt="1" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="geo_region" type="char" length="2" decimal="0" jt="1" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="geo_region_name" type="varchar" length="100" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="os_family" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="os_name" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="page_url" type="varchar" length="4096" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<index name="Distribution" unique="CUSTOM1" >
+				<column name="root_id" />
+			</index>
+			<fk name="fk_product_info_from_pdp" to_schema="dev.atomic" to_table="com_google_analytics_enhanced_ecommerce_product_field_object_1" >
+				<fk_column name="root_id" pk="root_id" />
+			</fk>
+		</table>
+		<table name="se_events" >
+			<column name="collector_tstamp" type="timestamp" length="29" decimal="6" jt="93" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="platform" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="domain_userid" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="user_id" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="se_action" type="varchar" length="1000" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="se_category" type="varchar" length="1000" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="se_label" type="varchar" length="4096" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="se_property" type="varchar" length="1000" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="se_value" type="double precision" length="17" decimal="17" jt="8" />
+			<column name="domain_sessionid" type="char" length="128" decimal="0" jt="1" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="is_qa_url" type="bool" length="1" decimal="0" jt="-7" />
+			<column name="dvce_type" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="os_family" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="br_family" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="se_current_flow" type="varchar" length="666" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<fk name="fk_se_events_events" to_schema="dev.atomic" to_table="events" >
+				<fk_column name="domain_userid" pk="domain_userid" />
+			</fk>
+		</table>
+		<table name="session_conversions" >
+			<column name="session_id" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="customer_id" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="is_cart" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="is_address" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="is_payment" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="is_submitted" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="is_submitted_first_touchpoint" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="is_submitted_any_touchpoint" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="is_paid" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="is_recurring_customer" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="vouchers_used" type="varchar" length="65535" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<index name="Distribution" unique="CUSTOM1" >
+				<column name="session_id" />
+			</index>
+			<fk name="fk_session_conversions_session_order_mapping" to_schema="dev.web" to_table="session_order_mapping" >
+				<fk_column name="session_id" pk="session_id" />
+			</fk>
+		</table>
+		<table name="session_events_features" >
+			<column name="session_id" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="mietkauf_tooltip_events" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="failed_delivery_tracking_events" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="search_enter" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="search_click" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="search_product_click" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="search_cta_click" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="search_exit" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="min_search_enter_timestamp" type="timestamp" length="29" decimal="6" jt="93" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<index name="Distribution" unique="UNIQUE" >
+				<column name="session_id" />
+			</index>
+			<fk name="fk_session_events_features" to_schema="dev.atomic" to_table="events" >
+				<fk_column name="session_id" pk="domain_sessionidx" />
+			</fk>
+		</table>
+		<table name="session_events_lists" >
+			<column name="session_id" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="search_click_skus" type="varchar" length="65535" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="search_click_subcategories" type="varchar" length="65535" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="checkout_flow" type="varchar" length="65535" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<index name="Distribution" unique="CUSTOM1" >
+				<column name="session_id" />
+			</index>
+			<fk name="fk_session_events_lists_event_properties" to_schema="dev.web" to_table="event_properties" >
+				<fk_column name="session_id" pk="session_id" />
+			</fk>
+		</table>
+		<table name="session_marketing_mapping" >
+			<column name="session_id" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="page_view_start" type="timestamp" length="29" decimal="6" jt="93" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="marketing_channel" type="varchar" length="14" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="marketing_medium" type="varchar" length="382" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="marketing_source" type="varchar" length="382" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="is_paid" type="bool" length="1" decimal="0" jt="-7" />
+			<column name="marketing_campaign" type="varchar" length="9000" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="marketing_term" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="referer_url" type="varchar" length="9382" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="is_internal" type="bool" length="1" decimal="0" jt="-7" />
+			<column name="is_display_criteo" type="bool" length="1" decimal="0" jt="-7" />
+			<column name="is_display_google" type="bool" length="1" decimal="0" jt="-7" />
+			<column name="is_paid_search_brand" type="bool" length="1" decimal="0" jt="-7" />
+			<column name="is_paid_search_generic" type="bool" length="1" decimal="0" jt="-7" />
+			<column name="is_paid_social" type="bool" length="1" decimal="0" jt="-7" />
+			<column name="is_refer_a_friend" type="bool" length="1" decimal="0" jt="-7" />
+			<column name="is_influencers" type="bool" length="1" decimal="0" jt="-7" />
+			<column name="is_affiliate" type="bool" length="1" decimal="0" jt="-7" />
+			<column name="is_partnerships" type="bool" length="1" decimal="0" jt="-7" />
+			<column name="is_retail" type="bool" length="1" decimal="0" jt="-7" />
+			<column name="is_social_media" type="bool" length="1" decimal="0" jt="-7" />
+			<column name="is_direct" type="bool" length="1" decimal="0" jt="-7" />
+			<column name="is_organic_search_brand" type="bool" length="1" decimal="0" jt="-7" />
+			<column name="is_organic_search_generic" type="bool" length="1" decimal="0" jt="-7" />
+			<column name="is_crm" type="bool" length="1" decimal="0" jt="-7" />
+			<column name="is_referral" type="bool" length="1" decimal="0" jt="-7" />
+			<fk name="fk_session_marketing_mapping_page_views" to_schema="dev.web" to_table="page_views" >
+				<fk_column name="session_id" pk="session_id" />
+			</fk>
+		</table>
+		<table name="session_order_mapping" >
+			<column name="lit_of_sources" type="varchar" length="65535" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="session_id" type="char" length="128" decimal="0" jt="1" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="order_id" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="customer_id_snowplow" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="encoded_customer_id" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="customer_id_web" type="varchar" length="11" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="marketing_channel" type="varchar" length="14" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="marketing_source" type="varchar" length="382" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="marketing_medium" type="varchar" length="382" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="os" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="browser" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="device_type" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="customer_id_order" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="signup_date" type="timestamp" length="29" decimal="6" jt="93" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="session_index" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="session_start" type="timestamp" length="29" decimal="6" jt="93" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="session_end" type="timestamp" length="29" decimal="6" jt="93" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="cart_date" type="timestamp" length="29" decimal="6" jt="93" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="address_orders" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="payment_orders" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="submitted_date" type="timestamp" length="29" decimal="6" jt="93" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="paid_date" type="timestamp" length="29" decimal="6" jt="93" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="voucher_code" type="varchar" length="512" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="new_recurring" type="varchar" length="9" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="sessions_per_order" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="orders_per_session" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="session_rank_order" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="session_rank_order_channel" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="session_count_order" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="session_count_excl_direct_order" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="first_touchpoint" type="bool" length="1" decimal="0" jt="-7" />
+			<column name="last_touchpoint_before_cart" type="bool" length="1" decimal="0" jt="-7" />
+			<column name="last_touchpoint_before_submitted" type="bool" length="1" decimal="0" jt="-7" />
+			<index name="unq_session_order_mapping_order_id" unique="UNIQUE" >
+				<column name="order_id" />
+			</index>
+			<index name="unq_session_order_mapping_session_id" unique="UNIQUE" >
+				<column name="session_id" />
+			</index>
+			<fk name="fk_session_order_mapping_session_order_sp_user_mapping" to_schema="dev.scratch" to_table="session_order_sp_user_mapping" >
+				<fk_column name="order_id" pk="order_id" />
+			</fk>
+			<fk name="fk_session_order_mapping_sessions" to_schema="dev.web" to_table="sessions" >
+				<fk_column name="customer_id_snowplow" pk="snowplow_user_id" />
+			</fk>
+		</table>
+		<table name="sessions" >
+			<column name="snowplow_user_id" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="encoded_customer_id" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="customer_id" type="varchar" length="11" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="session_id" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="session_index" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="page_view_index" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="session_start" type="timestamp" length="29" decimal="6" jt="93" />
+			<column name="session_end" type="timestamp" length="29" decimal="6" jt="93" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="page_views" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="bounced_page_views" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="engaged_page_views" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="time_engaged_in_s" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="time_engaged_in_s_tier" type="varchar" length="12" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="user_bounced" type="bool" length="1" decimal="0" jt="-7" />
+			<column name="user_engaged" type="bool" length="1" decimal="0" jt="-7" />
+			<column name="first_page_url" type="varchar" length="3255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="is_qa_url" type="bool" length="1" decimal="0" jt="-7" />
+			<column name="is_voucher_join" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="first_page_title" type="varchar" length="2000" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="first_page_type" type="varchar" length="3000" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="first_page_type_detail" type="varchar" length="65535" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="referer_url" type="varchar" length="9382" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="is_paid" type="bool" length="1" decimal="0" jt="-7" />
+			<column name="marketing_channel" type="varchar" length="14" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="marketing_medium" type="varchar" length="382" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="marketing_source" type="varchar" length="382" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="marketing_term" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="marketing_content" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="marketing_campaign" type="varchar" length="9000" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="marketing_click_id" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="marketing_network" type="varchar" length="64" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="store_id" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="store_label" type="varchar" length="28" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="store_name" type="varchar" length="2510" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="geo_country" type="char" length="2" decimal="0" jt="1" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="geo_region_name" type="varchar" length="100" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="geo_city" type="varchar" length="75" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="geo_zipcode" type="varchar" length="15" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="geo_latitude" type="double precision" length="17" decimal="17" jt="8" />
+			<column name="geo_longitude" type="double precision" length="17" decimal="17" jt="8" />
+			<column name="geo_timezone" type="varchar" length="64" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="ip_address" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="ip_isp" type="varchar" length="100" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="ip_organization" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="ip_domain" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="ip_net_speed" type="varchar" length="100" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="browser" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="browser_language" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="os" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="os_timezone" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="device" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="device_type" type="varchar" length="50" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="device_is_mobile" type="bool" length="1" decimal="0" jt="-7" />
+			<index name="Sorting" unique="CUSTOM2" options="COMPOUND" >
+				<column name="session_start" />
+			</index>
+			<index name="Distribution" unique="UNIQUE" >
+				<column name="snowplow_user_id" />
+			</index>
+			<fk name="fk_sessions_page_views" to_schema="dev.web" to_table="page_views" >
+				<fk_column name="snowplow_user_id" pk="snowplow_user_id" />
+			</fk>
+		</table>
+		<table name="users" >
+			<column name="snowplow_user_id" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="customer_id" type="varchar" length="11" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="first_session_start" type="timestamp" length="29" decimal="6" jt="93" />
+			<column name="first_session_time" type="varchar" length="29" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="first_session_minute" type="varchar" length="26" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="first_session_hour" type="varchar" length="23" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="first_session_date" type="varchar" length="18" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="first_session_week" type="varchar" length="18" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="first_session_month" type="varchar" length="15" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="first_session_quarter" type="varchar" length="15" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="first_session_year" type="integer" length="10" decimal="0" jt="4" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="last_session_end" type="timestamp" length="29" decimal="6" jt="93" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="page_views" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="sessions" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="time_engaged_in_s" type="bigint" length="19" decimal="0" jt="-5" >
+				<column_extra>encode az64</column_extra>
+			</column>
+			<column name="first_page_url" type="varchar" length="3255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="first_page_title" type="varchar" length="2000" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="marketing_medium" type="varchar" length="382" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="marketing_source" type="varchar" length="382" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="marketing_term" type="varchar" length="255" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="marketing_content" type="varchar" length="500" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="marketing_campaign" type="varchar" length="9000" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="marketing_click_id" type="varchar" length="128" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="marketing_network" type="varchar" length="64" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<column name="marketing_channel" type="varchar" length="14" decimal="0" jt="12" >
+				<column_extra>encode lzo</column_extra>
+			</column>
+			<index name="Distribution" unique="CUSTOM1" >
+				<column name="snowplow_user_id" />
+			</index>
+			<index name="Sorting" unique="CUSTOM2" options="COMPOUND" >
+				<column name="first_session_start" />
+			</index>
+			<fk name="fk_users_sessions" to_schema="dev.web" to_table="sessions" >
+				<fk_column name="snowplow_user_id" pk="snowplow_user_id" />
+			</fk>
+		</table>
+	</schema>
+	<connector name="Redshift" database="Redshift" driver_class="com.amazon.redshift.jdbc42.Driver" driver_jar="RedshiftJDBC42-no-awssdk-1.2.45.1069.jar" driver_desc="Standard" host="redshift-datawarehouse.production" port="5439" instance="dev" user="manavveer" passwd="Vi9Wcj1FdV91M0B+eFBEeg==" />
+	<layout name="Snowplow Layout" id="Layout_248e" show_relation="columns" >
+		<comment><![CDATA[Snowplow Schema ER]]></comment>
+		<entity schema="dev.atomic" name="com_google_analytics_cookies_1" color="336666" x="64" y="1616" />
+		<entity schema="dev.atomic" name="com_google_analytics_enhanced_ecommerce_action_1" color="336666" x="64" y="960" />
+		<entity schema="dev.atomic" name="com_google_analytics_enhanced_ecommerce_action_field_object_1" color="336666" x="64" y="816" >
+			<column name="schema_vendor" />
+			<column name="schema_name" />
+			<column name="schema_format" />
+			<column name="schema_version" />
+			<column name="root_id" />
+			<column name="root_tstamp" />
+		</entity>
+		<entity schema="dev.atomic" name="com_google_analytics_enhanced_ecommerce_impression_field_object_1" color="1A4D4D" x="48" y="1904" />
+		<entity schema="dev.atomic" name="com_google_analytics_enhanced_ecommerce_product_field_object_1" color="4D8080" x="64" y="1184" >
+			<column name="schema_vendor" />
+			<column name="schema_name" />
+			<column name="schema_format" />
+			<column name="schema_version" />
+			<column name="root_id" />
+			<column name="root_tstamp" />
+		</entity>
+		<entity schema="dev.atomic" name="com_google_analytics_enhanced_ecommerce_promo_field_object_1" color="4D8080" x="64" y="1344" />
+		<entity schema="dev.atomic" name="com_snowplowanalytics_snowplow_duplicate_1" color="BEBEF4" x="1120" y="352" />
+		<entity schema="dev.atomic" name="com_snowplowanalytics_snowplow_mobile_context_1" color="99B3FF" x="752" y="352" />
+		<entity schema="dev.atomic" name="com_snowplowanalytics_snowplow_ua_parser_context_1" color="99B3FF" x="368" y="352" />
+		<entity schema="dev.atomic" name="com_snowplowanalytics_snowplow_web_page_1" color="BEBEF4" x="1472" y="352" />
+		<entity schema="dev.scratch" name="customer_mapping" color="FFFFFF" x="2896" y="576" />
+		<entity schema="dev.atomic" name="event_id_0100_pk" color="BED3F4" x="256" y="2912" />
+		<entity schema="dev.web" name="event_properties" color="FFFF4D" x="3008" y="1456" />
+		<entity schema="dev.atomic" name="events" color="FF00FF" x="1072" y="944" >
+			<column name="event_id" />
+			<column name="app_id" />
+			<column name="platform" />
+			<column name="etl_tstamp" />
+			<column name="collector_tstamp" />
+			<column name="dvce_created_tstamp" />
+			<column name="event" />
+			<column name="txn_id" />
+			<column name="name_tracker" />
+			<column name="v_tracker" />
+			<column name="v_collector" />
+		</entity>
+		<entity schema="dev.atomic" name="manifest" color="BED3F4" x="224" y="3088" />
+		<entity schema="dev.atomic" name="mat_git_dwh_scripts" color="BED3F4" x="240" y="3008" />
+		<entity schema="dev.scratch" name="non_registered_users" color="CC3333" x="1904" y="208" />
+		<entity schema="dev.web" name="order_conversions" color="FFFF4D" x="1392" y="2384" >
+			<column name="order_id" />
+			<column name="mietkauf_tooltip_events" />
+			<column name="failed_delivery_tracking_events" />
+			<column name="min_session_start" />
+			<column name="search_enter_events" />
+			<column name="min_search_enter_timestamp" />
+			<column name="search_confirm_events" />
+			<column name="search_exit_events" />
+			<column name="touchpoints" />
+			<column name="first_touchpoint" />
+		</entity>
+		<entity schema="dev.web" name="order_info" color="FFFF4D" x="1648" y="2384" >
+			<column name="schema_vendor" />
+			<column name="schema_name" />
+			<column name="schema_format" />
+			<column name="schema_version" />
+			<column name="root_id" />
+			<column name="root_tstamp" />
+			<column name="ref_root" />
+			<column name="ref_tree" />
+			<column name="domain_userid" />
+		</entity>
+		<entity schema="dev.atomic" name="org_w3_performance_timing_1" color="FFE6B3" x="1072" y="1696" >
+			<column name="schema_vendor" />
+			<column name="schema_name" />
+			<column name="schema_format" />
+			<column name="schema_version" />
+			<column name="root_id" />
+			<column name="root_tstamp" />
+			<column name="ref_root" />
+			<column name="ref_tree" />
+		</entity>
+		<entity schema="dev.web" name="page_views" color="FFFF4D" x="2368" y="1296" >
+			<column name="root_id" />
+			<column name="snowplow_user_id" />
+			<column name="encoded_customer_id" />
+			<column name="customer_id" />
+			<column name="user_registration_date" />
+			<column name="customer_acquisition_date" />
+			<column name="customer_id_mapped" />
+			<column name="session_id" />
+			<column name="session_index" />
+			<column name="page_view_id" />
+			<column name="page_view_index" />
+		</entity>
+		<entity schema="dev.web" name="product_info_from_pdp" color="FFFF4D" x="3008" y="2080" >
+			<column name="schema_vendor" />
+			<column name="schema_name" />
+			<column name="schema_format" />
+			<column name="schema_version" />
+			<column name="root_id" />
+			<column name="root_tstamp" />
+			<column name="ref_root" />
+			<column name="ref_tree" />
+			<callout x="3024" y="2048" pointer="SV" />
+		</entity>
+		<entity schema="dev.scratch" name="registered_users" color="B31A1A" x="1904" y="304" />
+		<entity schema="dev.web" name="se_events" color="FFFF4D" x="3008" y="1776" />
+		<entity schema="dev.web" name="session_conversions" color="FFFF4D" x="2848" y="2400" />
+		<entity schema="dev.web" name="session_events_features" color="FFFF4D" x="2048" y="2400" />
+		<entity schema="dev.web" name="session_events_lists" color="FFFF4D" x="2320" y="2400" />
+		<entity schema="dev.web" name="session_marketing_mapping" color="FFFF4D" x="2576" y="2400" />
+		<entity schema="dev.scratch" name="session_order_event_mapping" color="B31A1A" x="2320" y="960" />
+		<entity schema="dev.web" name="session_order_mapping" color="FFFF4D" x="2032" y="1616" >
+			<column name="lit_of_sources" />
+			<column name="session_id" />
+			<column name="order_id" />
+			<column name="customer_id_snowplow" />
+			<column name="encoded_customer_id" />
+			<column name="customer_id_web" />
+			<column name="marketing_channel" />
+			<column name="marketing_source" />
+		</entity>
+		<entity schema="dev.scratch" name="session_order_sp_user_mapping" color="B31A1A" x="1888" y="976" />
+		<entity schema="dev.scratch" name="session_order_url_mapping" color="B31A1A" x="2112" y="976" />
+		<entity schema="dev.web" name="sessions" color="FFFF4D" x="2368" y="1616" >
+			<column name="snowplow_user_id" />
+			<column name="encoded_customer_id" />
+			<column name="customer_id" />
+			<column name="session_id" />
+			<column name="session_index" />
+			<column name="page_view_index" />
+			<column name="session_start" />
+			<column name="session_end" />
+		</entity>
+		<entity schema="dev.scratch" name="user_encoded_ids" color="FFFFFF" x="3136" y="560" />
+		<entity schema="dev.web" name="users" color="FFFF4D" x="2368" y="1840" >
+			<column name="snowplow_user_id" />
+			<column name="customer_id" />
+			<column name="first_session_start" />
+			<column name="first_session_time" />
+			<column name="first_session_minute" />
+			<column name="first_session_hour" />
+			<column name="first_session_date" />
+			<column name="first_session_week" />
+		</entity>
+		<entity schema="dev.scratch" name="web_events" color="FFFFFF" x="2688" y="576" >
+			<column name="user_id" />
+			<column name="domain_userid" />
+			<column name="network_userid" />
+			<column name="domain_sessionid" />
+			<column name="domain_sessionidx" />
+			<column name="root_id" />
+			<column name="page_view_id" />
+			<column name="page_title" />
+		</entity>
+		<entity schema="dev.scratch" name="web_events_scroll_depth" color="FFFFFF" x="2688" y="768" />
+		<entity schema="dev.scratch" name="web_events_time" color="FFFFFF" x="2672" y="160" />
+		<entity schema="dev.scratch" name="web_events_time_incremental" color="CC3333" x="2672" y="368" />
+		<entity schema="dev.scratch" name="web_page_context" color="FFFFFF" x="2336" y="624" />
+		<entity schema="dev.scratch" name="web_timing_context" color="FFFFFF" x="2128" y="80" />
+		<entity schema="dev.scratch" name="web_ua_parser_context" color="990000" x="2432" y="80" />
+		<group name="Scratch" color="990000" >
+			<comment><![CDATA[This layer precomputes data and acts a bridge between atomic and web ]]></comment>
+			<entity schema="dev.scratch" name="customer_mapping" />
+			<entity schema="dev.scratch" name="session_order_sp_user_mapping" />
+			<entity schema="dev.scratch" name="session_order_url_mapping" />
+			<entity schema="dev.scratch" name="user_encoded_ids" />
+			<entity schema="dev.scratch" name="web_events" />
+			<entity schema="dev.scratch" name="web_events_scroll_depth" />
+			<entity schema="dev.scratch" name="web_events_time" />
+			<entity schema="dev.scratch" name="web_events_time_incremental" />
+			<entity schema="dev.scratch" name="web_page_context" />
+			<entity schema="dev.scratch" name="web_timing_context" />
+			<entity schema="dev.scratch" name="web_ua_parser_context" />
+			<entity schema="dev.scratch" name="session_order_event_mapping" />
+			<entity schema="dev.scratch" name="registered_users" />
+			<entity schema="dev.scratch" name="non_registered_users" />
+		</group>
+		<group name="Atomic_Snowplow_Analytics" color="8099FF" >
+			<entity schema="dev.atomic" name="com_snowplowanalytics_snowplow_ua_parser_context_1" />
+			<entity schema="dev.atomic" name="com_snowplowanalytics_snowplow_duplicate_1" />
+			<entity schema="dev.atomic" name="com_snowplowanalytics_snowplow_mobile_context_1" />
+			<entity schema="dev.atomic" name="com_snowplowanalytics_snowplow_web_page_1" />
+		</group>
+		<group name="Atomic_Google_Analytics" color="1A4D4D" >
+			<entity schema="dev.atomic" name="com_google_analytics_enhanced_ecommerce_action_field_object_1" />
+			<entity schema="dev.atomic" name="com_google_analytics_cookies_1" />
+			<entity schema="dev.atomic" name="com_google_analytics_enhanced_ecommerce_action_1" />
+			<entity schema="dev.atomic" name="com_google_analytics_enhanced_ecommerce_impression_field_object_1" />
+			<entity schema="dev.atomic" name="com_google_analytics_enhanced_ecommerce_product_field_object_1" />
+			<entity schema="dev.atomic" name="com_google_analytics_enhanced_ecommerce_promo_field_object_1" />
+		</group>
+		<group name="Web" color="FFFF4D" >
+			<entity schema="dev.web" name="session_order_mapping" />
+			<entity schema="dev.web" name="event_properties" />
+			<entity schema="dev.web" name="order_conversions" />
+			<entity schema="dev.web" name="order_info" />
+			<entity schema="dev.web" name="users" />
+			<entity schema="dev.web" name="sessions" />
+			<entity schema="dev.web" name="session_marketing_mapping" />
+			<entity schema="dev.web" name="session_events_lists" />
+			<entity schema="dev.web" name="session_events_features" />
+			<entity schema="dev.web" name="session_conversions" />
+			<entity schema="dev.web" name="se_events" />
+			<entity schema="dev.web" name="product_info_from_pdp" />
+			<entity schema="dev.web" name="page_views" />
+		</group>
+	</layout>
+	<layout name="scratch" id="Layout_157b" confirmed="y" show_relation="columns" >
+		<entity schema="dev.scratch" name="customer_mapping" color="3986C1" x="1376" y="736" />
+		<entity schema="dev.scratch" name="non_registered_users" color="3986C1" x="480" y="192" />
+		<entity schema="dev.scratch" name="registered_users" color="3986C1" x="464" y="304" />
+		<entity schema="dev.scratch" name="session_order_event_mapping" color="3986C1" x="64" y="2608" />
+		<entity schema="dev.scratch" name="session_order_sp_user_mapping" color="3986C1" x="48" y="2720" />
+		<entity schema="dev.scratch" name="session_order_url_mapping" color="3986C1" x="64" y="2528" />
+		<entity schema="dev.scratch" name="user_encoded_ids" color="3986C1" x="1600" y="736" />
+		<entity schema="dev.scratch" name="web_events" color="3986C1" x="1120" y="736" />
+		<entity schema="dev.scratch" name="web_events_scroll_depth" color="3986C1" x="1104" y="464" />
+		<entity schema="dev.scratch" name="web_events_time" color="3986C1" x="752" y="688" />
+		<entity schema="dev.scratch" name="web_events_time_incremental" color="3986C1" x="640" y="48" />
+		<entity schema="dev.scratch" name="web_page_context" color="3986C1" x="752" y="480" />
+		<entity schema="dev.scratch" name="web_timing_context" color="3986C1" x="864" y="48" />
+		<entity schema="dev.scratch" name="web_ua_parser_context" color="3986C1" x="1168" y="48" />
+	</layout>
+</project>

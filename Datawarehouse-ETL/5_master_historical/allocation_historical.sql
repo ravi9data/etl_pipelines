@@ -1,0 +1,56 @@
+--snapshot of everyday
+DELETE FROM master.allocation_historical
+WHERE date = current_date - 1;
+
+INSERT INTO master.allocation_historical
+SELECT allocation_id, 
+asset_id, 
+allocation_sf_id,
+subscription_id, 
+customer_type, 
+store_type, 
+store_short, 
+subcategory_name, 
+product_sku, 
+allocation_status_original, 
+is_manual_allocation, 
+is_recirculated, 
+is_last_allocation_per_asset, 
+rank_allocations_per_subscription, 
+order_approved_at, 
+order_completed_at, 
+subscription_created_at,
+allocated_at, 
+push_to_wh_at, 
+ready_to_ship_at, 
+shipment_label_created_at,
+shipment_provider, 
+picked_by_carrier_at, 
+shipment_at, 
+failed_delivery_at, 
+failed_reason, 
+is_package_lost, 
+delivered_at, 
+return_shipment_label_created_at, 
+return_shipment_at, 
+return_delivery_date,
+cancellation_returned_at,
+refurbishment_start_at, 
+refurbishment_end_at, 
+revocation_date, 
+created_at,
+updated_at, 
+shipment_tracking_number,
+return_shipment_tracking_number,
+shipping_country, 
+city, 
+state_name, 
+replacement_date, 
+replaced_by, 
+replacement_for, 
+replacement_reason,
+current_date - 1 as date
+FROM master.allocation
+WHERE created_at < current_date;
+
+--removing duplicates

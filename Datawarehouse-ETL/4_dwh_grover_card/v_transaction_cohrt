@@ -1,0 +1,25 @@
+WITH card AS (
+	SELECT customer_id,
+	date_trunc('month',first_event_timestamp) AS card_created_Date
+	WHERE first_event_name='created' 
+	AND latest_card=1)
+,deposit AS (
+	SELECT 
+	customer_id,
+	event_timestamp,-- AS deposit_date,
+	amount_transaction,
+	event_name
+	WHERE event_name IN ('money-received','payment-successful'))
+SELECT
+c.customer_id ,
+card_created_Date,
+date_trunc('month',event_timestamp) AS event_month,
+event_timestamp,
+amount_transaction,
+event_name
+FROM card c 
+LEFT OUTER JOIN deposit d
+ON c.customer_id = d.customer_id
+WITH NO SCHEMA BINDING;
+
+
